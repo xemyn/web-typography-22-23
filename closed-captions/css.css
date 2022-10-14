@@ -7,24 +7,65 @@ Feel free to adjust the defaults to your needs.
 ********************************************** */
 
 
+/* #cirkel{
+	color:#ffffff;
+	border-radius: 100%;
+	width: 200px;
+	height:200px;
+	position: absolute; 
+} */
+
+/* #cirkel .on {
+	opacity: 1;
+}
+.cirkel .off {
+	opacity: 0;
+} */
+
 #closed-captions {
 	position: relative;
+	align-content: center;
 	/* text-align: center; */
+	/* /* width: 100%; */
+	height: auto;
+
 }
 
 #closed-captions p {
 	opacity: 0;
 	transition: .05s;
+	/* width: -webkit-fill-available; */
 	position: absolute;
-	width: 100%;
+	/* padding: 5px; */
 	text-align: center;
-
+	background-color: white;
+	border: 25px solid white;
+	width: 765px;
+	text-align: center;
+	margin-top:-100px;
+	margin-left: 305px;
 }
+
+
+/* #closed-captions p {
+	opacity: 0;
+	transition: .05s;
+	width: -webkit-fill-available;
+	position: absolute;
+	color: white;
+	font-size: 1.3em;
+	color: black;
+	padding: 0.5em;
+	text-align: center;
+	margin: 15px 22% 0px;
+} */
+
+
 #closed-captions .on {
 	opacity: 1;
 }
 #closed-captions .off {
-	transition: .2s;
+	transition: .1s;
 	opacity: 0;
 }
 .voice1 {
@@ -33,8 +74,8 @@ Feel free to adjust the defaults to your needs.
 	color:#006600;
 }
 .voice2 {
-	font-weight: bold;
-	font-style: italic; 
+	/* font-weight: bold; */
+	color:#121756;
 }
 
 /* **********************************************
@@ -49,7 +90,8 @@ You probably want to change the styling.
 	opacity: 0;
 	font-family: brenner;
 	font-size: 18px;
-	margin:0px;
+	border:none;
+	/* margin:0px; */
 	/* background-color: blueviolet; */
 	
 }
@@ -133,15 +175,62 @@ You probably want to change the styling.
 	font-family: "brenner sans bold";
 }
 
-
-
-
 .p1.on {
-	/* background: hotpink;
-	color: red;
-	font-size: 200px; */
+	/* background: hotpink; */
+	/* color: red; */
+	font-size: 14px;
+	font-family: "brenner sans bold";
 }
 
+
+.p2.on {
+	opacity: 0;
+	font-family: "brenner mono";
+	font-size: 16px;
+	font-weight: 200px;
+	border:none;
+	/* margin:0px; */
+	/* background-color: blueviolet; */
+	
+}
+
+.p3.on{
+	font-family: "brenner mono";
+	font-size: 16px;
+	/* font-weight: 200; */
+
+}
+.p4.on{
+	font-family: "brenner mono";
+	font-size: 16px;
+	font-weight: 200;
+}
+
+.p5.on #closed-captions {
+	font-family: "brenner mono";
+	font-size: 16px;
+	font-weight: 200;
+	position: absolute;
+	/* padding: 5px; */
+	text-align: center;
+	color: rgb(228, 19, 19);
+	background-color: rgb(233, 236, 39);
+	border: 25px solid rgb(228, 19, 19);
+	width: 765px;
+	text-align: center;
+	margin-top:-100px;
+	margin-left: 305px;
+}
+
+.p6.on {
+	font-size: 12px;
+	font-family: "brenner sans bold";
+}
+.p7.on {
+	font-size: 16px;
+	font-family: "brenner mono";
+	font-weight: 200;
+}
 /* **********************************************
 Sounds.
 	You can style the whole body, or you can 
@@ -170,17 +259,28 @@ body {
 	height: 100vh;
 	margin: 0;
 	justify-content: center;
+	background: #101010;
 }
+
 #video-container {
 	margin: auto;
+	position: absolute;
+	height: 100vh;
+	/* width:100%; */
+	/* top: 0px;
+	right : 0px;
+	bottom : 0px;
+	left : 0px; */
+
 }
 #video-mask {
 	aspect-ratio: 240.5/100;
+	position: relative;
 	display: grid;
 	overflow: hidden;
 	align-content: center;
-	margin-left:600px;
-	margin-top: 400px;
+	margin-left:650px;
+	margin-top: 350px;
 	transition: 1s;
 }
 
@@ -192,13 +292,325 @@ iframe {
 	margin-top: -0.35vw;
 }
 
+.sound0 {
+	/* border-width: 100%;
+	border-height: 100%;
+	border-color: rgba(0,.5);
+	background: #101010;
+	background-size: cover;
+	/* background: url('https://i.gifer.com/fetch/w300-preview/16/1634e9074b6ec09760fbef71bc54cd75.gif') */
+	/* background: url('https://media.giphy.com/media/tL5HmgfZi0Qow/giphy.gif') no-repeat ; */
+	background-size: cover;
+	background-position: center; 
+}
 
 .sound0 #video-mask {
-	/* animation: mymove 4s normal; */
 	/* transform:translate(+25%,+25%) scale(1); */
-	transition: 3s;
-	transform:translate(-275px, -60%)scale(1.3);;
+	/* animation: shake 2s cubic-bezier(.36,.07,.19,.97) both;
+    transform: translate3d(0, 0, 0); */
+	/* margin-left:650px;
+	margin-top: 350px; */
+	transform:translate(-250px, -60%)scale(1.3);
+	transition: 0.4s;
+	/* animation: horizontal-shaking 0.5s infinite; */
+	/* background-image: url(http://www.reddit.com/r/gifs/comments/228ddx/spaceit_all_starts_to_look_the_same_after_a_while/); */
+	background-size: cover;
+	background-position: center;
+}
 
+.sound1 {
+	background: #101010;
+	animation:  0.5s horizontal-shaking 0.3s;
+	animation-iteration-count: .5;
+	background: url('https://media.giphy.com/media/CJzxeevfkefecfVbU5/giphy.gif') no-repeat;
+	/* https://media.giphy.com/media/CJzxeevfkefecfVbU5/giphy.gif https://media.giphy.com/media/rnTrCog8df0CAUtMFz/giphy.gif https://media.giphy.com/media/rnTrCog8df0CAUtMFz/giphy.gifhttps://media.giphy.com/media/xTiTnqbp4wCeotMYSI/giphy.gif */
+	background-size: cover;
+	background-position: center; 
+	/* animation: groter 2s ease-in; */
+}
+
+.sound2{
+	background:  #101010;
+}
+
+.sound3{
+	background: #980000;
+	/* animation: groter1 0.7; */
+	/* transition: 0.3s; */
+	animation: groter 1s ease-in;
+}
+
+.sound4{
+	background: #101010;
+}
+
+.sound5  {
+	background: #000000;
+}
+
+.sound5 #cirkel {
+	z-index: -1;
+	border-radius: 50%;
+	background-color: #980000;
+	width: 175px;
+    height: 175px;
+	position: absolute;
+	margin-left:650px;
+	margin-top: 275px;
+	opacity: 1;
+	animation: scaleInUit 0.7s cubic-bezier(.36, .11, .89, .32);
+	animation-iteration-count: 1;
+}
+
+
+.sound6{
+	/* opacity: 0.4; */
+	transition: 1s;
+	background: #101010;
+	/* background: url('https://media.giphy.com/media/8qwviVOYjvanN1CoTG/giphy-downsized-large.gif') no-repeat; */
+	/* background: url('https://media.giphy.com/media/8qwviVOYjvanN1CoTG/giphy-downsized-large.gif') no-repeat; */
+	/* background: url('https://media.giphy.com/media/8DguZ6zMuBM6YiHHFC/giphy.gif') no-repeat; */
+	background-size: cover;
+	background-position: center;
+}
+
+.sound8{
+	/* opacity: 0; */
+	background: #ffffff;
+}
+.sound8 #cirkel {
+	z-index: -1;
+	border-radius: 50%;
+	background-color: #980000;
+	width: 175px;
+    height: 175px;
+	position: absolute;
+	margin-left:650px;
+	margin-top: 275px;
+	opacity: 1;
+	animation: scaleIn 0.7s cubic-bezier(.36, .11, .89, .32);
+	animation-iteration-count: 1;
+}
+
+.sound9{
+	/* opacity: 0,4; */
+	/* transition: 1s; */
+	/* background: url('https://media.giphy.com/media/8qwviVOYjvanN1CoTG/giphy-downsized-large.gif') no-repeat; */
+	/* background: url('https://media.giphy.com/media/8qwviVOYjvanN1CoTG/giphy-downsized-large.gif') no-repeat; */
+	background: url('https://media.giphy.com/media/8DguZ6zMuBM6YiHHFC/giphy.gif') no-repeat;
+	background-size: cover;
+	background-position: center;
+	/* transform: scale(1); */
+	/* translate: scale(1.5) 25px; */
+	animation: groter 6s ease-in;
+}
+.sound10 {
+	background: #101010;
+}
+.sound11 {
+	/* opacity: 0; */
+	background: #000000;
+}
+.sound11 #cirkel1 {
+	z-index: -1;
+	border-radius: 50%;
+	/* box-shadow: 1em #ffffff; */
+	background-color: #980000;
+	width: 175px;
+    height: 175px;
+	position: absolute;
+	margin-left:650px;
+	margin-top: 275px;
+	opacity: 1;
+	animation: scaleIn 0.7s cubic-bezier(.36, .11, .89, .32);
+	animation-iteration-count: 1;
+}
+.sound12 {
+	/* opacity: 0; */
+	background: #000000;
+}
+.sound14 #cirkel2 {
+	z-index: -1;
+	border-radius: 50%;
+	background-color: #980000;
+	width: 175px;
+    height: 175px;
+	position: absolute;
+	margin-left:650px;
+	margin-top: 275px;
+	opacity: 1;
+	animation: scaleIn 0.7s cubic-bezier(.36, .11, .89, .32);
+	animation-iteration-count: 1;
+}
+
+/* .sound15 {
+	background: url('https://media.giphy.com/media/3o6vXRxrhj7Ov94Gbu/giphy.gif') no-repeat;
+	background-size: cover;
+	background-position: center;
+} */
+
+
+.sound15 {
+	background: #101010;
+}
+
+
+/* .sound15 #noise {
+	position: fixed;
+	top: -50%;
+	left: -50%;
+	right: -50%;
+	bottom: -50%;
+	width: 200%;
+	height: 200vh;
+	background: transparent url('http://assets.iceable.com/img/noise-transparent.png') repeat 0 0;
+	background-repeat: repeat;
+	animation: bg-animation 0.2s infinite;
+	opacity: 1;
+	visibility: visible;
+} */
+
+
+.sound15 {
+	background: #383838;
+}
+.sound16 #noise {
+	position: fixed;
+	top: -50%;
+	left: -50%;
+	right: -50%;
+	bottom: -50%;
+	width: 200%;
+	height: 200vh;
+	background: transparent url('http://assets.iceable.com/img/noise-transparent.png') repeat 0 0;
+	background-repeat: repeat;
+	animation: bg-animation 1s infinite;
+	opacity: 1;
+	visibility: visible;
+}
+
+.sound16 {
+	animation: groter2 23s ease-in;
+}
+
+.sound17{
+	background: url('https://media.giphy.com/media/3o6vXRxrhj7Ov94Gbu/giphy.gif') no-repeat;
+	background-size: cover;
+	background-position: center;
+}
+
+/* .sound10 #cirkel {
+	border-radius: 50%;
+	background-color: #c00000;
+	width: 150px;
+	height: 150px;
+	position: absolute;
+	margin-left:650px;
+	margin-top: 325px;
+	opacity: 0;
+	animation: scaleIn 4s cubic-bezier(.36, .11, .89, .32);
+	animation-iteration-count: 1;
+} */
+/* .sound10 { */
+	/* opacity: 1; */
+	/* background: #101010; */
+	/* color:#ffffff;
+	border-radius: 100%;
+	width: 200px;
+	height:200px;
+	position: absolute; 
+	align-content: center;
+	justify-items: center;
+	animation: groter 8s ease-in; */
+
+
+
+
+/* .sound3 {
+	background: #101010;
+	margin: 30px;
+} */
+
+/* .sound3 #video-container {
+	margin: auto;
+	position: absolute;
+	height: 100vh;
+	display: inline;
+	justify-content: center;
+	background: #000000;
+}
+.sound3 #video-mask{
+	margin: auto;
+	position: absolute;
+	border-radius: 75%;
+	display: inline;
+	justify-content: center;
+	align-content: center;
+	width: 850px;
+	height: 350px;
+	background: #c00000;
+	margin-left:550px;  
+	margin-top: 400px;
+} */
+
+/* .sound3 #video-placeholder{
+	width: 625px;
+	height: 260px;
+} */
+
+
+
+/* .sound4 .cirkel{
+	background: #101010;
+	color:#ffffff;
+	width: 800px;
+	height:400px;
+	position: absolute; 
+} */
+
+	/*margin: auto;
+	position: absolute;
+	height: 100vh;
+	width:100%;
+}
+
+.sound1 #video-mask {
+	background: #101010;
+	animation: horizontal-shaking 0.5s infinite; 
+	height:400px;
+	width: 800px;
+	text-align: center;
+	margin-top:100px;
+	margin-left: 305px;
+} */
+
+
+@keyframes horizontal-shaking {
+	/* 0% { transform: translateX(0)  }
+	25% { transform: translateX(4px) }
+	50% { transform: translateX(-4px) }
+	75% { transform: translateX(4px) }
+	100% { transform: translateX(0) } */
+	0% { transform: translate(0, 0) rotate(0deg); }
+    25% { transform: translate(4px, 4px) rotate(2deg); }
+    50% { transform: translate(0, 0) rotate(0eg); }
+    75% { transform: translate(-4px, 4px) rotate(-2deg); }
+    100% { transform: translate(0, 0) rotate(0deg); }
+}
+
+@keyframes groter {
+	0% {transform: scale(1,1)}
+	100% {transform: scale(1.1, 1.1)}
+}
+
+@keyframes groter1{
+	0% {transform: scale(0,0)}
+	100% {transform: scale(1.05, 1.05)}
+}
+
+@keyframes groter2{
+	0% {transform: scale(1,1)}
+	100% {transform: scale(2, 2)}
 }
 
 /* @keyframes mymove {
@@ -208,3 +620,71 @@ iframe {
 /* .sound1 #video-mask {
 	box-shadow: 4em 4em 4em 4em hotpink;
 } */
+
+
+/* @keyframes shake {
+	10%, 90% {
+	transform: translate3d(-1px, 0, 0);
+	}
+	20%, 80% {
+	transform: translate3d(2px, 0, 0);
+	}
+	30%, 50%, 70% {
+	transform: translate3d(-2px, 0, 0);
+	}
+	40%, 60% {
+	transform: translate3d(2px, 0, 0);
+	}
+  } */
+
+
+@keyframes scaleIn {
+	0%{
+	transform: scale(1.5, 1.5);
+	opacity: 1;
+	}
+	/* 50%{
+		box-shadow: 0 0 1.5em rgba(255,0,0,1),
+	0 0 1em rgba(255,0,0,1) inset;
+    border-color: rgba(200,0,0,1);
+	} */
+	100% {
+	transform: scale(15, 15);
+	opacity: 1;
+
+	/* box-shadow: 0 0 1.5em rgba(255,0,0,1),
+	0 0 1em rgba(255,0,0,1) inset;
+    border-color: rgba(200,0,0,1); */
+	}
+}
+
+
+@keyframes scaleInUit {
+	0%{
+	transform: scale(1.5, 1.5);
+	opacity: 1;
+	}
+	50% {
+	transform: scale(10, 10);
+	opacity: 0.5;
+	}
+	100%{
+		transform: scale(1.5, 1.5);
+		opacity: 1;
+		}
+}
+
+
+@keyframes bg-animation {
+    0% { transform: translate(0,0) }
+    10% { transform: translate(-10%,-10%) }
+    20% { transform: translate(-20%,10%) }
+    30% { transform: translate(10%,-20%) }
+    40% { transform: translate(-10%,30%) }
+    50% { transform: translate(-10%,5%) }
+    60% { transform: translate(20%,0) }
+    70% { transform: translate(0,20%) }
+    80% { transform: translate(-30%,0) }
+    90% { transform: translate(20%,10%) }
+    100% { transform: translate(10%,0) }
+}
