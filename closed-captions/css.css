@@ -200,22 +200,34 @@ You probably want to change the styling.
 	/* font-weight: 200; */
 
 }
-.p4.on{
-	font-family: "brenner mono";
-	font-size: 16px;
-	font-weight: 200;
-}
-
-.p5.on #closed-captions {
+#closed-captions .p4.on{
 	font-family: "brenner mono";
 	font-size: 16px;
 	font-weight: 200;
 	position: absolute;
 	/* padding: 5px; */
 	text-align: center;
-	color: rgb(228, 19, 19);
+	color: #121756;
+	padding: 22px;
 	background-color: rgb(233, 236, 39);
-	border: 25px solid rgb(228, 19, 19);
+	border: 3px solid #121756;
+	width: 765px;
+	text-align: center;
+	margin-top:-100px;
+	margin-left: 305px;
+}
+
+#closed-captions .p5.on{
+	font-family: "brenner mono";
+	font-size: 16px;
+	font-weight: 200;
+	position: absolute;
+	/* padding: 5px; */
+	text-align: center;
+	color: #121756;
+	padding: 22px;
+	background-color: rgb(233, 236, 39);
+	border: 3px solid #121756;
 	width: 765px;
 	text-align: center;
 	margin-top:-100px;
@@ -322,7 +334,7 @@ iframe {
 	background: #101010;
 	animation:  0.5s horizontal-shaking 0.3s;
 	animation-iteration-count: .5;
-	background: url('https://media.giphy.com/media/CJzxeevfkefecfVbU5/giphy.gif') no-repeat;
+	background: url('https://media.giphy.com/media/tL5HmgfZi0Qow/giphy.gif') no-repeat;
 	/* https://media.giphy.com/media/CJzxeevfkefecfVbU5/giphy.gif https://media.giphy.com/media/rnTrCog8df0CAUtMFz/giphy.gif https://media.giphy.com/media/rnTrCog8df0CAUtMFz/giphy.gifhttps://media.giphy.com/media/xTiTnqbp4wCeotMYSI/giphy.gif */
 	background-size: cover;
 	background-position: center; 
@@ -339,7 +351,6 @@ iframe {
 	/* transition: 0.3s; */
 	animation: groter 1s ease-in;
 }
-
 .sound4{
 	background: #101010;
 }
@@ -362,7 +373,6 @@ iframe {
 	animation-iteration-count: 1;
 }
 
-
 .sound6{
 	/* opacity: 0.4; */
 	transition: 1s;
@@ -372,11 +382,90 @@ iframe {
 	/* background: url('https://media.giphy.com/media/8DguZ6zMuBM6YiHHFC/giphy.gif') no-repeat; */
 	background-size: cover;
 	background-position: center;
+	
+}
+
+.sound7 .tekstwolk{
+	opacity: 0.5;
+	z-index:2;
+	background-image: url(../img/tekstwolk.png);
+	background-repeat: no-repeat;
+	background-size: contain;
+	/* background-position: 5px 10px; */
+	margin-left:200px;
+	margin-top: -25px;
+	width: 75px;
+	height:50px; 
+}
+.sound7 .tekstwolkk{
+	opacity: 0.5;
+	z-index:2;
+	background-image: url(../img/tekstwolkk.png);
+	background-repeat: no-repeat;
+	background-size: contain;
+	/* background-position: 5px 10px; */
+	margin-left:1100px;
+	margin-top: -600px;
+	width: 75px;
+	height:50px; 
+}
+
+.sound7 .tekstwolk1{
+	opacity: 0.5;
+	z-index:3;
+	background-image: url(../img/tekstwolk.png);
+	background-repeat: no-repeat;
+	background-size: contain;
+	/* background-position: 5px 10px; */
+	/* margin-left: 50px; */
+	margin-top: 150px;
+	width: 75px;
+	height:50px; 
+}
+
+.sound7 .tekstwolkk1{
+	opacity: 0.5;
+	z-index:3;
+	background-image: url(../img/tekstwolkk.png);
+	background-repeat: no-repeat;
+	background-size: contain;
+	/* background-position: 5px 10px; */
+	margin-left:1250px;
+	margin-top: -350px;
+	width: 75px;
+	height:50px; 
+}
+
+.sound7 .tekstwolk2{
+	opacity: 0.5;
+	z-index:3;
+	background-image: url(../img/tekstwolk.png);
+	background-repeat: no-repeat;
+	background-size: contain;
+	/* background-position: 5px 10px; */
+	margin-left:150px;
+	margin-top: 300px;
+	width: 75px;
+	height:50px; 
+}
+
+
+.sound7 .tekstwolkk2{
+	opacity: 0.5;
+	z-index:3;
+	background-image: url(../img/tekstwolkk.png);
+	background-repeat: no-repeat;
+	background-size: contain;
+	/* background-position: 5px 10px; */
+	margin-left:1050px;
+	margin-top: -50px;
+	width: 75px;
+	height:50px; 
 }
 
 .sound8{
 	/* opacity: 0; */
-	background: #ffffff;
+	background: #000000;
 }
 .sound8 #cirkel {
 	z-index: -1;
@@ -402,15 +491,207 @@ iframe {
 	background-position: center;
 	/* transform: scale(1); */
 	/* translate: scale(1.5) 25px; */
-	animation: groter 6s ease-in;
+	animation: groter 6.5s ease-in;
 }
 .sound10 {
 	background: #101010;
 }
+
+.sound10 .tekstwolk{
+	opacity: 0; 
+}
+.sound10 .tekstwolk1{
+	opacity: 0;
+}
+.sound10 .tekstwolk2{
+	opacity: 0;
+}
+.sound10 .tekstwolkk{
+	opacity: 0;
+}
+.sound10 .tekstwolkk1{
+	opacity: 0;
+}
+.sound10 .tekstwolkk2{
+	opacity: 0;
+}
+
+
+
+
+.sound11 .tekstwolk{
+	opacity: 1;
+	z-index:2;
+	background-image: url(../img/tekstwolk.png);
+	background-repeat: no-repeat;
+	background-size: contain;
+	/* background-position: 5px 10px; */
+	margin-left:200px;
+	margin-top: -25px;
+	width: 75px;
+	height:50px; 
+}
+.sound11 .tekstwolkk{
+	opacity: 1;
+	display: inline;
+	z-index:2;
+	background-image: url(../img/tekstwolkk.png);
+	background-repeat: no-repeat;
+	background-size: contain;
+	/* background-position: 5px 10px; */
+	margin-left:1100px;
+	margin-top: -600px;
+	width: 75px;
+	height:50px; 
+}
+
+.sound11 .tekstwolk1{
+	opacity: 1;
+	z-index:3;
+	background-image: url(../img/tekstwolk.png);
+	background-repeat: no-repeat;
+	background-size: contain;
+	/* background-position: 5px 10px; */
+	/* margin-left: 50px; */
+	margin-top: 150px;
+	width: 75px;
+	height:50px; 
+}
+
+.sound11 .tekstwolkk1{
+	opacity: 1;
+	z-index:3;
+	background-image: url(../img/tekstwolkk.png);
+	background-repeat: no-repeat;
+	background-size: contain;
+	/* background-position: 5px 10px; */
+	margin-left:1250px;
+	margin-top: -350px;
+	width: 75px;
+	height:50px; 
+}
+
+.sound11 .tekstwolk2{
+	opacity: 1;
+	z-index:3;
+	background-image: url(../img/tekstwolk.png);
+	background-repeat: no-repeat;
+	background-size: contain;
+	/* background-position: 5px 10px; */
+	margin-left:150px;
+	margin-top: 300px;
+	width: 75px;
+	height:50px; 
+}
+
+
+.sound11 .tekstwolkk2{
+	opacity: 1;
+	z-index:3;
+	background-image: url(../img/tekstwolkk.png);
+	background-repeat: no-repeat;
+	background-size: contain;
+	/* background-position: 5px 10px; */
+	margin-left:1050px;
+	margin-top: -50px;
+	width: 75px;
+	height:50px; 
+}
+
+
+
+
+
+
+
+.sound12 .tekstwolk{
+	opacity: 1;
+	z-index:2;
+	background-image: url(../img/tekstwolk.png);
+	background-repeat: no-repeat;
+	background-size: contain;
+	/* background-position: 5px 10px; */
+	margin-left:200px;
+	margin-top: -25px;
+	width: 75px;
+	height:50px; 
+}
+.sound12 .tekstwolkk{
+	opacity: 1;
+	display: inline;
+	z-index:2;
+	background-image: url(../img/tekstwolkk.png);
+	background-repeat: no-repeat;
+	background-size: contain;
+	/* background-position: 5px 10px; */
+	margin-left:1100px;
+	margin-top: -600px;
+	width: 75px;
+	height:50px; 
+}
+.sound12 .tekstwolk1{
+	opacity: 1;
+	z-index:3;
+	background-image: url(../img/tekstwolk.png);
+	background-repeat: no-repeat;
+	background-size: contain;
+	/* background-position: 5px 10px; */
+	/* margin-left: 50px; */
+	margin-top: 150px;
+	width: 75px;
+	height:50px; 
+}
+.sound12 .tekstwolkk1{
+	opacity: 1;
+	z-index:3;
+	background-image: url(../img/tekstwolkk.png);
+	background-repeat: no-repeat;
+	background-size: contain;
+	/* background-position: 5px 10px; */
+	margin-left:1250px;
+	margin-top: -350px;
+	width: 75px;
+	height:50px; 
+}
+.sound12 .tekstwolk2{
+	opacity: 1;
+	z-index:3;
+	background-image: url(../img/tekstwolk.png);
+	background-repeat: no-repeat;
+	background-size: contain;
+	/* background-position: 5px 10px; */
+	margin-left:150px;
+	margin-top: 300px;
+	width: 75px;
+	height:50px; 
+}
+.sound12 .tekstwolkk2{
+	opacity: 1;
+	z-index:3;
+	background-image: url(../img/tekstwolkk.png);
+	background-repeat: no-repeat;
+	background-size: contain;
+	/* background-position: 5px 10px; */
+	margin-left:1050px;
+	margin-top: -50px;
+	width: 75px;
+	height:50px; 
+}
+
+
+/* 
+.sound11 .tekstwolk{
+	opacity: 0;
+	background: #000000;
+	z-index:-4;
+} */
+
+
 .sound11 {
 	/* opacity: 0; */
 	background: #000000;
 }
+
 .sound11 #cirkel1 {
 	z-index: -1;
 	border-radius: 50%;
@@ -429,6 +710,30 @@ iframe {
 	/* opacity: 0; */
 	background: #000000;
 }
+
+.sound14{
+	/* background-color: aqua; */
+}
+
+.sound14 .tekstwolk{
+	opacity: 0; 
+}
+.sound14 .tekstwolk1{
+	opacity: 0;
+}
+.sound14 .tekstwolk2{
+	opacity: 0;
+}
+.sound14 .tekstwolkk{
+	opacity: 0;
+}
+.sound14 .tekstwolkk1{
+	opacity: 0;
+}
+.sound14 .tekstwolkk2{
+	opacity: 0;
+}
+
 .sound14 #cirkel2 {
 	z-index: -1;
 	border-radius: 50%;
@@ -443,15 +748,18 @@ iframe {
 	animation-iteration-count: 1;
 }
 
-/* .sound15 {
-	background: url('https://media.giphy.com/media/3o6vXRxrhj7Ov94Gbu/giphy.gif') no-repeat;
-	background-size: cover;
-	background-position: center;
-} */
-
-
 .sound15 {
-	background: #101010;
+	/* background: url('https://media.giphy.com/media/3o6vXRxrhj7Ov94Gbu/giphy.gif') no-repeat;
+	background-size: cover;
+	background-position: center; */
+	background-color: #101010;
+}
+
+
+.sound16 {
+	background-color: #101010;
+;
+	/* margin-left: 100px; */
 }
 
 
@@ -470,11 +778,10 @@ iframe {
 	visibility: visible;
 } */
 
-
-.sound15 {
+.sound16 {
 	background: #383838;
 }
-.sound16 #noise {
+.sound17 #noise {
 	position: fixed;
 	top: -50%;
 	left: -50%;
@@ -489,14 +796,24 @@ iframe {
 	visibility: visible;
 }
 
-.sound16 {
-	animation: groter2 23s ease-in;
+.sound17 {
+	animation: groter2 48s ease-in;
 }
 
-.sound17{
-	background: url('https://media.giphy.com/media/3o6vXRxrhj7Ov94Gbu/giphy.gif') no-repeat;
-	background-size: cover;
-	background-position: center;
+.sound17 .tekstwolk{
+	/* background: url('https://media.giphy.com/media/3o6vXRxrhj7Ov94Gbu/giphy.gif') no-repeat; */
+	/* background-size: cover;
+	background-position: center; */
+	/* z-index:2;
+	background-image: url(../img/tekstwolk.png);
+	background-repeat: no-repeat; */
+	/* background: #101010; */
+	/* background-size: contain; */
+	/* background-position: 5px 10px; */
+	/* margin-left:-400px;
+	margin-top: 150px;
+	width: 150px;
+	height:100px;  */
 }
 
 /* .sound10 #cirkel {
@@ -522,9 +839,6 @@ iframe {
 	align-content: center;
 	justify-items: center;
 	animation: groter 8s ease-in; */
-
-
-
 
 /* .sound3 {
 	background: #101010;
@@ -610,7 +924,8 @@ iframe {
 
 @keyframes groter2{
 	0% {transform: scale(1,1)}
-	100% {transform: scale(2, 2)}
+	50% {transform: scale(1.2, 1.2)}
+	100% {transform: scale(1.6, 1.6)}
 }
 
 /* @keyframes mymove {
