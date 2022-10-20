@@ -72,7 +72,7 @@ You probably want to change the styling.
 ********************************************** */
 .p0 span {
 	opacity: 0;
-	font-family: brenner mono;
+	font-family: brenner;
 	font-size: 18px;
 	border:none;
 	/* margin:0px; */
@@ -80,70 +80,93 @@ You probably want to change the styling.
 	
 }
 .p0.on span:first-of-type {
+	/* officer */
+	/* text-transform: uppercase; */
 	opacity: 1;
-	transition: 0s;
-	font-weight: 200;
-	margin: 0px;
+	transition: 0s 0s; 
+	font-weight: 400;
+	font-family: "brenner mono";
 }
 .p0.on span:nth-of-type(2) {
+	/* K */
+	opacity: 1;
+	transition: 0s 0s;
+	margin-right: -.25em;
+	font-weight: 500;
+	font-family: "brenner mono";
+}
+.p0.on span:nth-of-type(3) {
+	/* D */
 	opacity: 1;
 	transition: 0s .4s;
 	margin-right: -.25em;
-	font-weight: 400;
+	font-weight: 500;
+	font-family: "brenner mono";
 }
-.p0.on span:nth-of-type(3) {
+.p0.on span:nth-of-type(4) {
+	/* 6 */
 	opacity: 1;
 	transition: 0s .5s;
 	margin-right: -.25em;
-	font-weight: 400;
-}
-.p0.on span:nth-of-type(4) {
-	opacity: 1;
-	transition: 0s .7s;
-	margin-right: -.25em;
-	font-weight: 400;
+	font-weight: 500;
+	font-family: "brenner mono";
 }
 .p0.on span:nth-of-type(5) {
+	/* 3 */
+	opacity: 1;
+	transition: 0s 6s;
+	margin-right: -.25em;
+	font-family: "brenner mono";
+}
+.p0.on span:nth-of-type(6) {
+	/* 7 */
 	opacity: 1;
 	transition: 0s 1.1s;
 	margin-right: -.25em;
-	/* font-family: "brenner sans"; */
-}
-.p0.on span:nth-of-type(6) {
-	opacity: 1;
-	transition: 0s 1.4s;
-	margin-right: -.25em;
-	/* font-family: "brenner display"; */
+	font-family: "brenner display";
 }
 .p0.on span:nth-of-type(7) {
 	opacity: 1;
-	transition: 0s 1.7s;
+	transition: 0s 1.4s;
 	margin-right: -.25em;
-	/font-family: "brenner script";
+	font-family: "brenner display";
 }
 .p0.on span:nth-of-type(8) {
 	opacity: 1;
-	transition: 0s 2s;
-	/* font-family: "brenner script"; */
+	transition: 0s 1.7s;
+	font-family: "brenner display";
 }
 .p0.on span:nth-of-type(9) {
 	opacity: 1;
-	transition: 0s 2.7s;
+	transition: 0s 2s;
+	font-style: italic; 
+	margin-right: -.25em;
+	/* color:black; */
 	font-family: "brenner mono";
 }
 .p0.on span:nth-of-type(10) {
 	opacity: 1;
 	transition: 0s 3s;
+	margin-right: -.25em;
+	font-style: italic; 
+	/* color:black; */
 	font-family: "brenner mono";
 }
 .p0.on span:nth-of-type(11) {
 	opacity: 1;
-	transition: 0s 3.7s;
-	font-family: "brenner slab";
+	transition: 0s 3.2s;
+	margin-right: -.25em;
+	font-style: italic; 
+	/* color:black; */
+	font-family: "brenner mono"
 }
-
-
-
+.p0.on span:nth-of-type(12) {
+	/* ready */
+	opacity: 1;
+	/* color:black; */
+	transition: 0s 3.7s;
+	font-family: "brenner sans bold";
+}
 .p1.on {
 	/* background: hotpink; */
 	/* color: red; */
@@ -174,7 +197,7 @@ You probably want to change the styling.
 	font-weight: 600px;
 }
 .p4.on{
-	font-family: "brenner mono medium";
+	font-family: "brenner mono";
 	font-size: 16px;
 	font-weight: 200;
 	position: absolute;
@@ -190,7 +213,7 @@ You probably want to change the styling.
 	margin-left: 305px;
 }
 .p5.on{
-	font-family: "brenner mono medium";
+	font-family: "brenner mono";
 	font-style: italic;
 	font-size: 16px;
 	font-weight: 200;
@@ -212,20 +235,20 @@ You probably want to change the styling.
 .p7.on {
 	font-size: 16px;
 	/* font-style: italic; */
-	font-family: "brenner display black";
-	font-weight: 420px;
+	font-family: "brenner script";
+	font-weight: 400px;
 }
 
 .p8.on {
 	/* cells eerste */
-	font-family: "brenner mono";
+	font-family: "brenner mono regular ";
 	/* font-size: 200px; */
 	font-size: 22px;
 	font-weight: 400px;
 }
 .p9.on {
 	/* cells tweede */
-	font-family: "brenner mono medium";
+	font-family: "brenner mono bold";
 	font-size: 14px;
 }
 
@@ -234,7 +257,6 @@ You probably want to change the styling.
 	font-family: "brenner mono";
 	font-size: 16px;
 	font-weight: 400px;
-	font-style: italic;
 }
 .p11.on {
 	/* cells eerste */
@@ -244,7 +266,7 @@ You probably want to change the styling.
 
 .p12.on {
 	/* cells tweede */
-	font-family: "brenner mono medium";
+	font-family: "brenner mono bold";
 	font-size: 14px;
 }
 
@@ -252,7 +274,7 @@ You probably want to change the styling.
 	/* vraag */
 	font-family: "brenner mono";
 	font-size: 16px;
-	font-style: italic;
+	font-weight: 400px;
 }
 
 .p14.on {
@@ -263,7 +285,7 @@ You probably want to change the styling.
 
 .p15.on {
 	/* cells tweede */
-	font-family: "brenner mono medium";
+	font-family: "brenner mono bold";
 	font-size: 14px;
 }
 
@@ -272,7 +294,6 @@ You probably want to change the styling.
 	font-family: "brenner mono";
 	font-size: 16px;
 	font-weight: 400px;
-	font-style: italic;
 }
 
 .p17.on {
@@ -283,7 +304,7 @@ You probably want to change the styling.
 
 .p18.on {
 	/* cells tweede */
-	font-family: "brenner mono medium";
+	font-family: "brenner mono bold";
 	font-size: 14px;
 }
 
@@ -296,77 +317,16 @@ You probably want to change the styling.
 
 .p20.on {
 	/* cells */
-	font-family: "brenner mono medium";
+	font-family: "brenner mono bold";
 	font-size: 14px;
 }
 
-/* .p21.on {
+.p21.on {
 	font-family: "brenner mono";
 	font-size: 16px;
 	font-weight: 400px;
-} */
-
-
-.p21 span {
-	/* cells eerste */
-	font-family: "brenner mono";
-	font-size: 16px;
-	font-style: italic;
 }
 
-.p21.on span:first-of-type {
-	opacity: 1;
-	transition: 0s;
-	font-size: 18px;
-}
-
-.p21.on span:nth-of-type(2) {
-	opacity: 1;
-	transition: 0.5s 0.05s;
-	font-size: 18px;
-	font-weight: 600;
-}
-
-.p21.on span:nth-of-type(3) {
-	opacity: 1;
-	transition: 0.5s .2s;
-	font-size: 18px;
-	font-weight: 600;
-}
-.p21.on span:nth-of-type(4) {
-	opacity: 1;
-	transition: 0.5s .3s;
-	font-size: 18px;
-	font-weight: 600;
-}
-
-.p21.on span:nth-of-type(5) {
-	opacity: 1;
-	transition: 0.5s .45s;
-	font-size: 18px;
-	font-weight: 600;
-}
-
-.p21.on span:nth-of-type(6) {
-	opacity: 1;
-	transition: 0.5s .5s;
-	font-size: 18px;
-	font-weight: 600;
-}
-
-.p21.on span:nth-of-type(7) {
-	opacity: 1;
-	transition: 0.5s .6s;
-	font-size: 18px;
-	font-weight: 600;
-}
-
-.p21.on span:nth-of-type(8) {
-	opacity: 1;
-	transition: 0.5s .7s;
-	font-size: 18px;
-	font-weight: 600;
-}
 .p22.on {
 	/* cells eerste */
 	font-family: "brenner mono";
@@ -375,85 +335,15 @@ You probably want to change the styling.
 
 .p23.on {
 	/* cells tweede */
-	font-family: "brenner mono medium";
+	font-family: "brenner mono bold";
 	font-size: 14px;
 }
 
-/* .p24.on {
+.p24.on {
 	font-family: "brenner mono";
 	font-size: 16px;
 	font-weight: 400px;
-} */
-
-
-.p24 span {
-	/* cells eerste */
-	font-family: "brenner mono";
-	font-size: 16px;
-	font-style: italic;
 }
-
-.p24.on span:first-of-type {
-	opacity: 1;
-	transition: 0s;
-	font-size: 18px;
-}
-.p24.on span:first-of-type(2)  {
-	opacity: 1;
-	transition: 0s;
-	font-size: 18px;
-}
-.p24.on span:first-of-type(3)  {
-	opacity: 1;
-	transition: 0s;
-	font-size: 18px;
-}
-.p24.on span:first-of-type(4)  {
-	opacity: 1;
-	transition: 0s;
-	font-size: 18px;
-}
-.p24.on span:first-of-type(5) {
-	opacity: 1;
-	transition: 0s;
-	font-size: 18px;
-}
-.p24.on span:first-of-type(6) {
-	opacity: 1;
-	transition: 0s;
-	font-size: 18px;
-}
-.p24.on span:first-of-type(7) {
-	opacity: 1;
-	transition: 0s;
-	font-size: 18px;
-}
-.p24.on span:first-of-type(8) {
-	opacity: 1;
-	transition: 0s;
-	font-size: 18px;
-}
-
-.p24.on span:nth-of-type(9) {
-	opacity: 1;
-	transition: 0.5s 1s;
-	font-size: 18px;
-	font-weight: 600;
-}
-
-.p24.on span:nth-of-type(10) {
-	opacity: 1;
-	transition: 0.5s 1.15s;
-	font-size: 18px;
-	font-weight: 600;
-}
-.p24.on span:nth-of-type(11) {
-	opacity: 1;
-	transition: 0.5s 1.20s;
-	font-size: 18px;
-	font-weight: 600;
-}
-
 
 .p25.on {
 	/* cells eerste */
@@ -463,40 +353,13 @@ You probably want to change the styling.
 
 .p26.on {
 	/* cells tweede */
-	font-family: "brenner mono medium";
+	font-family: "brenner mono bold";
 	font-size: 14px;
 }
 
-/* .p27.on {
+.p27.on {
 	font-family: "brenner mono";
 	font-size: 16px;
-} */
-
-.p27 span {
-	/* cells eerste */
-	font-family: "brenner mono";
-	font-size: 16px;
-	font-style: italic;
-}
-
-.p27.on span:first-of-type {
-	opacity: 1;
-	transition: 0s;
-	font-size: 18px;
-}
-
-.p27.on span:nth-of-type(2) {
-	opacity: 1;
-	transition: 0.5s 0.05s;
-	font-size: 18px;
-	font-weight: 600;
-}
-
-.p27.on span:nth-of-type(3) {
-	opacity: 1;
-	transition: 0.5s .15s;
-	font-size: 18px;
-	font-weight: 600;
 }
 
 .p28.on {
@@ -512,101 +375,27 @@ You probably want to change the styling.
 
 .p29.on {
 	/* cells tweede */
-	font-family: "brenner mono medium";
+	font-family: "brenner mono bold";
 	font-size: 14px;
 }
 
-/* .p30.on {
-	font-family: "brenner mono";
-	font-size: 16px;
-} */
-
-
-.p30 span {
+.p30.on {
 	/* cells eerste */
 	font-family: "brenner mono";
 	font-size: 16px;
-	font-style: italic;
-}
-
-.p30.on span:first-of-type {
-	opacity: 1;
-	transition: 0s;
-	font-size: 18px;
-}
-
-.p30.on span:nth-of-type(2) {
-	opacity: 1;
-	transition: 0.5s 0.05s;
-	font-size: 18px;
-	font-weight: 600;
-}
-
-.p30.on span:nth-of-type(3) {
-	opacity: 1;
-	transition: 0.5s .15s;
-	font-size: 18px;
-	font-weight: 600;
 }
 
 .p31.on {
 	/* cells tweede */
-	font-family: "brenner mono medium";
+	font-family: "brenner mono bold";
 	font-size: 14px;
 }
 
-/* .p32.on {
-	font-family: "brenner mono";
-	font-size: 16px;
-} */
-
-.p32 span {
+.p32.on {
 	/* cells eerste */
 	font-family: "brenner mono";
 	font-size: 16px;
-	font-style: italic;
 }
-
-.p32.on span:first-of-type {
-	opacity: 1;
-	transition: 0s;
-	font-size: 18px;
-}
-
-.p32.on span:nth-of-type(2) {
-	opacity: 1;
-	transition: 0.5s 0.05s;
-	font-size: 18px;
-	font-weight: 600;
-}
-
-.p32.on span:nth-of-type(3) {
-	opacity: 1;
-	transition: 0.5s .2s;
-	font-size: 18px;
-	font-weight: 600;
-}
-.p32.on span:nth-of-type(4) {
-	opacity: 1;
-	transition: 0.5s .3s;
-	font-size: 18px;
-	font-weight: 600;
-}
-
-.p32.on span:nth-of-type(5) {
-	opacity: 1;
-	transition: 0.5s .45s;
-	font-size: 18px;
-	font-weight: 600;
-}
-
-.p32.on span:nth-of-type(6) {
-	opacity: 1;
-	transition: 0.5s .5s;
-	font-size: 18px;
-	font-weight: 600;
-}
-
 .p33.on {
 	/* cells eerste */
 	font-family: "brenner mono";
@@ -615,40 +404,14 @@ You probably want to change the styling.
 
 .p34.on {
 	/* cells tweede */
-	font-family: "brenner mono medium";
+	font-family: "brenner mono bold";
 	font-size: 14px;
 }
 
-/* .p35.on {
-	font-family: "brenner mono";
-	font-size: 16px;
-} */
-
-.p35 span {
+.p35.on {
 	/* cells eerste */
 	font-family: "brenner mono";
 	font-size: 16px;
-	font-style: italic;
-}
-
-.p35.on span:first-of-type {
-	opacity: 1;
-	transition: 0s;
-	font-size: 18px;
-}
-
-.p35.on span:nth-of-type(2) {
-	opacity: 1;
-	transition: 0.5s 0.05s;
-	font-size: 18px;
-	font-weight: 600;
-}
-
-.p35.on span:nth-of-type(3) {
-	opacity: 1;
-	transition: 0.5s .15s;
-	font-size: 18px;
-	font-weight: 600;
 }
 
 
@@ -660,7 +423,7 @@ You probably want to change the styling.
 
 .p37.on {
 	/* cells tweede */
-	font-family: "brenner mono medium";
+	font-family: "brenner mono bold";
 	font-size: 14px;
 }
 
@@ -672,101 +435,51 @@ You probably want to change the styling.
 
 .p39.on {
 	/* cells tweede */
-	font-family: "brenner mono medium";
+	font-family: "brenner mono bold";
 	font-size: 14px;
 }
 
-.p40 span {
+.p40.on {
 	/* cells eerste */
 	font-family: "brenner mono";
 	font-size: 16px;
-	font-style:italic
-}
-
-.p40.on span:first-of-type {
-	opacity: 1;
-	transition: 0s;
-	font-size: 18px;
-}
-
-.p40.on span:nth-of-type(2) {
-	opacity: 1;
-	transition: 0.4s .1s;
-	font-size: 18px;
-	font-weight: 600;
-}
-
-.p40.on span:nth-of-type(3) {
-	opacity: 1;
-	transition: 0.4s .3s;
-	font-size: 18px;
-	font-weight: 600;
-}
-.p40.on span:nth-of-type(4) {
-	opacity: 1;
-	transition: 0.4s .5s;
-	font-size: 18px;
-	font-weight: 600;
-}
-
-.p40.on span:nth-of-type(9) {
-	opacity: 1;
-	transition: 0s;
-	font-style: normal;
-}
-
-.p40.on span:nth-of-type(10) {
-	opacity: 1;
-	transition: 0s;
-	font-style: normal;
-}
-.p40.on span:nth-of-type(11) {
-	opacity: 1;
-	transition: 0s;
-	font-style: normal;
 }
 
 .p41.on {
 	/* cells tweede */
-	font-family: "brenner mono medium";
-	font-size: 16px;
+	font-family: "brenner mono bold";
+	font-size: 14px;
 }
 
 .p42.on {
 	/* cells tweede */
-	font-family: "brenner mono medium";
-	font-size: 16px;
-}
-
-.p43.on {
-	/* cells tweede */
-	font-family: "brenner mono medium";
-	font-size: 16px;
-}
-
-.p44.on {
-	/* cells tweede */
-	font-family: "brenner script";
-	font-size: 16px;
-}
-
-.p45.on {
-	/* cells tweede */
-	font-family: "brenner script";
-	font-size: 16px;
-}
-
-.p46.on {
-	/* cells tweede */
-	font-family: "brenner mono medium";
-	font-size: 16px;
-}
-
-.p47.on {
-	/* cells tweede */
-	font-family: "brenner mono medium";
+	font-family: "brenner mono bold";
 	font-size: 14px;
 }
+
+.p43on {
+	/* cells tweede */
+	font-family: "brenner mono bold";
+	font-size: 14px;
+}
+
+.p44on {
+	/* cells tweede */
+	font-family: "brenner mono bold";
+	font-size: 14px;
+}
+
+.p45on {
+	/* cells tweede */
+	font-family: "brenner mono bold";
+	font-size: 14px;
+}
+.p46on {
+	/* cells tweede */
+	font-family: "brenner mono bold";
+	font-size: 14px;
+}
+
 
 
 /* **********************************************
@@ -875,10 +588,6 @@ Sounds.
 	animation: groter 1.3s ease-in;
 }
 
-.sound3.p3.on #closed-captions {
-	opacity: 0;
-}
-
 /* .sound3  .p1.on{
 	color:#980000;
 	background: #980000;
@@ -892,7 +601,6 @@ Sounds.
 
 .sound4{
 	background: #101010;
-
 }
 
 .sound5  {
@@ -1218,6 +926,7 @@ Sounds.
 .sound12 #tekstwolkk2{
 	opacity: 0.5;
 }
+
 .sound12 #tekstwolk3{
 	opacity: 0.5;
 }
@@ -1236,6 +945,7 @@ Sounds.
 .sound12 #tekstwolkkkk1{
 	opacity: 0.5;
 }
+
 /* SOUND 13 */
 .sound13 #tekstwolk{
 	opacity: 0.5;
@@ -1273,13 +983,9 @@ Sounds.
 .sound13 #tekstwolkkkk1{
 	opacity: 0.5;
 }
-.sound13{
-	animation: kleur 3.5s ease-in;
-}
-
 
 .sound14{
-	animation: verti-shaking 0.5s;
+	animation: 0.5s verti-shaking 0.5s;
 	animation-iteration-count: 2;
 }
 
@@ -1356,23 +1062,11 @@ Sounds.
 
 
 .sound16 {
-	/* background: #383838; */
-	/* background: transparent url('https://media.giphy.com/media/3o6vXRxrhj7Ov94Gbu/giphy.gif');
-	background-size: cover;
-	background-position: center; */
+	background: #383838;
 }
 
-.sound16 #blok {
-	overflow: hidden;
-	position: relative;
-	color: #006600;
-	opacity: 0.4;
-	left: 0;
-	top: 0;
-	width:100%;
-	height: auto;
-}
-/* .sound16 #noise {
+
+.sound16 #noise {
 	position: fixed;
 	top: -50%;
 	left: -50%;
@@ -1384,11 +1078,12 @@ Sounds.
 	background-repeat: repeat;
 	animation: bg-animation 1s infinite;
 	opacity: 1;
-} */
-
-.sound17 {
-	animation: groter2 22s ease-in;
+	/* visibility: visible; */
 }
+
+/* .sound17 {
+	animation: groter2 19s ease-in;
+} */
 
 
 
@@ -1398,7 +1093,6 @@ Sounds.
 	https://media.giphy.com/media/CJzxeevfkefecfVbU5/giphy.gif https://media.giphy.com/media/rnTrCog8df0CAUtMFz/giphy.gif https://media.giphy.com/media/rnTrCog8df0CAUtMFz/giphy.gifhttps://media.giphy.com/media/xTiTnqbp4wCeotMYSI/giphy.gif;
 	background-size: cover;
 	background-position: center; */
-	animation: groter3 21.5s ease-in;
 }
 
 /* .sound10 #cirkel {
@@ -1520,15 +1214,11 @@ Sounds.
 	100% {transform: scale(1.2, 1.2)}
 }
 
-@keyframes groter3{
-	0% {transform: scale(1.15,1.15)}
-	100% {transform: scale(1.5, 1.5)}
+@keyframes groter2{
+	0% {transform: scale(1,1)}
+	100% {transform: scale(1.2, 1.2)}
 }
 
-@keyframes kleur{
-	0% {background-color: #101010}
-	100% {background-color: #606060;}
-}
 /* @keyframes mymove {
 	0%   {top: 0px;width: 625px;height: 500px;}
 	100% {top: 200px;width: 850px;height: 725px;}
