@@ -12,7 +12,6 @@ Feel free to adjust the defaults to your needs.
 	/* text-align: center; */
 	/* /* width: 100%; */
 	height: auto;
-
 }
 
 #closed-captions p {
@@ -30,6 +29,28 @@ Feel free to adjust the defaults to your needs.
 	margin-left: 305px;
 }
 
+#closed-captions2 {
+	position: relative;
+	align-content: center;
+	/* text-align: center; */
+	/* /* width: 100%; */
+	height: auto;
+}
+
+#closed-captions2 p {
+	opacity: 0;
+	transition: .05s;
+	/* width: -webkit-fill-available; */
+	position: absolute;
+	/* padding: 5px; */
+	text-align: center;
+	background-color: white;
+	border: 25px solid white;
+	width: 765px;
+	text-align: center;
+	margin-top:-100px;
+	margin-left: 305px;
+}
 
 /* #closed-captions p {
 	opacity: 0;
@@ -55,12 +76,25 @@ Feel free to adjust the defaults to your needs.
 .voice1 {
 	/* font-style: italic; */
 	/* dingen aanpassen */
-	color:#006600;
+	color:#336600;
 }
 .voice2 {
 	/* font-weight: bold; */
-	color:#3640ce;
+	color:#FF0099;
 }
+
+.voice4 {
+	color:#FFCC00;
+}
+
+.voice5 {
+	/* font-weight: bold; */
+	color:#980000;
+}
+
+
+
+
 
 /* **********************************************
 The first paragraph, with extended timing for 
@@ -72,7 +106,7 @@ You probably want to change the styling.
 ********************************************** */
 .p0 span {
 	opacity: 0;
-	font-family: brenner mono;
+	font-family: "brenner mono";
 	font-size: 18px;
 	border:none;
 	/* margin:0px; */
@@ -156,23 +190,29 @@ You probably want to change the styling.
 	opacity: 0;
 	font-family: "brenner mono";
 	font-size: 16px;
-	font-weight: 200px;
 	border:none;
 }
 
 .sound3 .p1.on{
+	opacity: 0;
 	font-family: "brenner mono";
+	width: 0px;
+	height: 0px;
 	font-size: 0px;
 	color:#980000;
 	background: #980000;
-	/* font-weight: 200; */
 	border: 25px solid #980000;
 }
 
+.sound3 #closed-captions .p1.on{
+		opacity: 0;
+		width: 0px;
+		height: 0px;
+}
+
 .p3.on{
-	font-family: "brenner mono";
+	font-family: "brenner mono medium";
 	font-size: 16px;
-	font-weight: 600px;
 }
 .p4.on{
 	font-family: "brenner mono medium";
@@ -182,7 +222,7 @@ You probably want to change the styling.
 	font-style: italic;
 	/* padding: 5px; */
 	text-align: center;
-	color: #3640ce;;
+	color: #FF0099;
 	/* background-color: rgb(233, 236, 39); */
 	/* border: 3px solid #121756; */
 	width: 765px;
@@ -190,6 +230,24 @@ You probably want to change the styling.
 	margin-top:-100px;
 	margin-left: 305px;
 }
+
+.sound4 #closed-captions p{
+	transition: .05s;
+	/* width: -webkit-fill-available; */
+	position: absolute;
+	/* padding: 5px; */
+	text-align: center;
+	background-color: white;
+	border: 25px solid white;
+	width: 765px;
+	text-align: center;
+	margin-top:-100px;
+}
+.sound4 .p4.on{
+	opacity: 1;
+	font-family: "brenner mono medium";
+}
+
 .p5.on{
 	font-family: "brenner mono medium";
 	font-style: italic;
@@ -198,7 +256,7 @@ You probably want to change the styling.
 	position: absolute;
 	/* padding: 5px; */
 	text-align: center;
-	color: #3640ce;;
+	color:#FF0099;
 	/* background-color: rgb(233, 236, 39); */
 	/* border: 3px solid #121756; */
 	width: 765px;
@@ -213,7 +271,7 @@ You probably want to change the styling.
 .p7.on {
 	font-size: 16px;
 	/* font-style: italic; */
-	font-family: "brenner script";
+	font-family: "brenner script medium";
 	font-weight: 420px;
 }
 
@@ -228,6 +286,7 @@ You probably want to change the styling.
 	/* cells tweede */
 	font-family: "brenner mono medium";
 	font-size: 14px;
+	animation: 0.2s flash 0.2s;
 }
 
 /* .p10.on {
@@ -243,31 +302,26 @@ You probably want to change the styling.
 	font-size: 16px;
 	font-style: italic;
 }
-
 .p10.on span:first-of-type {
 	opacity: 1;
 	transition: 0s;
 	font-size: 18px;
 }
-
 .p10.on span:nth-of-type(2) {
 	opacity: 1;
 	transition: 0.5s 0.05s;
 	font-size: 18px;
 }
-
 .p10.on span:nth-of-type(3) {
 	opacity: 1;
 	transition: 0.5s .10s;
 	font-size: 18px;
 }
-
 .p10.on span:nth-of-type(4) {
 	opacity: 1;
 	transition: 0.5s 0.20s;
 	font-size: 18px;
 }
-
 .p10.on span:nth-of-type(5) {
 	opacity: 1;
 	transition: 0.5s .3s;
@@ -278,19 +332,18 @@ You probably want to change the styling.
 	transition: 0.5s .40s;
 	font-size: 18px;
 }
-
 .p10.on span:nth-of-type(7) {
 	opacity: 1;
 	transition: 0.5s .50s;
 	font-size: 18px;
 }
-
 .p10.on span:nth-of-type(8) {
 	opacity: 1;
 	transition: 0.5s .60s;
 	font-size: 18px;
 }
-.p11.on {
+.p11
+.on {
 	/* cells eerste */
 	font-family: "brenner mono";
 	font-size: 22px;
@@ -300,6 +353,7 @@ You probably want to change the styling.
 	/* cells tweede */
 	font-family: "brenner mono medium";
 	font-size: 14px;
+	animation: 0.2s flash 0.2s;
 }
 
 /* .p13.on {
@@ -330,14 +384,14 @@ You probably want to change the styling.
 
 .p13.on span:nth-of-type(3) {
 	opacity: 1;
-	transition: 0.5s .10s;
+	transition: 0.5s .05s;
 	font-size: 18px;
 	font-weight: 600;
 }
 
 .p13.on span:nth-of-type(4) {
 	opacity: 1;
-	transition: 0.5s 0.20s;
+	transition: 0.5s 0.2s;
 	font-size: 18px;
 }
 
@@ -395,93 +449,79 @@ You probably want to change the styling.
 	transition: 0s;
 	font-size: 18px;
 }
-
 .p16.on span:nth-of-type(2) {
 	opacity: 1;
 	transition: 0.5s 0.05s;
 	font-size: 18px;
 }
-
 .p16.p10 span:nth-of-type(3) {
 	opacity: 1;
 	transition: 0.5s .10s;
 	font-size: 18px;
 }
-
 .p16.on span:nth-of-type(4) {
 	opacity: 1;
 	transition: 0.5s 0.2s;
 	font-size: 18px;
 }
-
 .p16.on span:nth-of-type(5) {
 	opacity: 1;
-	transition: 0.5s .3s;
+	transition: 0.5s .4s;
 	font-size: 18px;
 }
 .p16.on span:nth-of-type(6) {
 	opacity: 1;
-	transition: 0.5s .40s;
+	transition: 0.5s .6s;
 	font-size: 18px;
 }
-
 .p16.on span:nth-of-type(7) {
-	opacity: 1;
-	transition: 0.5s .50s;
-	font-size: 18px;
-}
-
-.p16.on span:nth-of-type(8) {
-	opacity: 1;
-	transition: 0.5s .70s;
-	font-size: 18px;
-}
-
-.p16.on span:nth-of-type(9) {
 	opacity: 1;
 	transition: 0.5s .8s;
 	font-size: 18px;
 }
-
-.p16.on span:nth-of-type(10) {
-	opacity: 1;
-	transition: 0.5s .9s;
-	font-size: 18px;
-}
-
-.p16.on span:nth-of-type(11) {
+.p16.on span:nth-of-type(8) {
 	opacity: 1;
 	transition: 0.5s 1s;
 	font-size: 18px;
 }
-
-.p16.on span:nth-of-type(12) {
+.p16.on span:nth-of-type(9) {
 	opacity: 1;
-	transition: 0.5s 1.1s;
+	transition: 0.5s1.2s;
 	font-size: 18px;
 }
-
-.p16.on span:nth-of-type(13) {
-	opacity: 1;
-	transition: 0.5s 1.2s;
-	font-size: 18px;
-}
-
-.p16.on span:nth-of-type(14) {
-	opacity: 1;
-	transition: 0.5s 1.3s;
-	font-size: 18px;
-}
-
-.p16.on span:nth-of-type(15) {
+.p16.on span:nth-of-type(10) {
 	opacity: 1;
 	transition: 0.5s 1.4s;
 	font-size: 18px;
 }
-
+.p16.on span:nth-of-type(11) {
+	opacity: 1;
+	transition: 0.5s 1.6s;
+	font-size: 18px;
+}
+.p16.on span:nth-of-type(12) {
+	opacity: 1;
+	transition: 0.5s 1.7s;
+	font-size: 18px;
+}
+.p16.on span:nth-of-type(13) {
+	opacity: 1;
+	transition: 0.5s 1.8s;
+	font-size: 18px;
+}
+.p16.on span:nth-of-type(14) {
+	opacity: 1;
+	transition: 0.5s 1.9s;
+	font-size: 18px;
+}
+.p16.on span:nth-of-type(15) {
+	opacity: 1;
+	transition: 0.5s 2s;
+	font-size: 18px;
+}
 .p16.on span:nth-of-type(16) {
 	opacity: 1;
-	transition: 0.5s 1.5s;
+	transition: 0.5s 2.1s;
 	font-size: 18px;
 }
 
@@ -519,21 +559,25 @@ You probably want to change the styling.
 
 .p21 span {
 	/* cells eerste */
+	transition: 0s;
 	font-family: "brenner mono";
 	font-size: 16px;
 	font-style: italic;
+	text-decoration: none;
 }
 
 .p21.on span:first-of-type {
 	opacity: 1;
 	transition: 0s;
 	font-size: 18px;
+	/* text-decoration: underline; */
 }
 
 .p21.on span:nth-of-type(2) {
 	opacity: 1;
 	transition: 0.5s 0.05s;
 	font-size: 18px;
+	/* text-decoration: underline; */
 	font-weight: 600;
 }
 
@@ -541,12 +585,14 @@ You probably want to change the styling.
 	opacity: 1;
 	transition: 0.5s .2s;
 	font-size: 18px;
+	/* text-decoration: underline; */
 	font-weight: 600;
 }
 .p21.on span:nth-of-type(4) {
 	opacity: 1;
 	transition: 0.5s .3s;
 	font-size: 18px;
+	/* text-decoration: underline; */
 	font-weight: 600;
 }
 
@@ -554,46 +600,61 @@ You probably want to change the styling.
 	opacity: 1;
 	transition: 0.5s .45s;
 	font-size: 18px;
+	/* text-decoration: underline; */
 	font-weight: 600;
 }
 
 .p21.on span:nth-of-type(6) {
 	opacity: 1;
-	transition: 0.5s .5s;
+	transition: 0.5s .6s;
 	font-size: 18px;
+	/* text-decoration: underline; */
 	font-weight: 600;
 }
 
 .p21.on span:nth-of-type(7) {
 	opacity: 1;
-	transition: 0.5s .6s;
+	transition: 0.5s .8s;
 	font-size: 18px;
+	/* text-decoration: underline; */
 	font-weight: 600;
 }
 
 .p21.on span:nth-of-type(8) {
 	opacity: 1;
-	transition: 0.5s .7s;
+	transition: 0.5s 1s;
 	font-size: 18px;
+	/* text-decoration: underline; */
 	font-weight: 600;
 }
 .p21.on span:nth-of-type(9) {
 	opacity: 1;
-	transition: 0.5s .8s;
+	transition: 0.5s 1.1s;
 	font-size: 18px;
+	/* text-decoration: underline; */
 }
 
 .p21.on span:nth-of-type(10) {
 	opacity: 1;
-	transition: 0.5s .9s;
+	transition: 0.5s 1.2s;
 	font-size: 18px;
+	/* text-decoration: underline; */
 }
 
 .p21.on span:nth-of-type(11) {
 	opacity: 1;
-	transition: 0.5s 1s;
+	transition: 0.5s 1.3s;
 	font-size: 18px;
+	/* text-decoration: underline; */
 }
+
+.p21.on span:nth-of-type(12) {
+	opacity: 1;
+	transition: 0.5s 1.4s;
+	font-size: 18px;
+	/* text-decoration: underline; */
+}
+
 .p22.on {
 	/* cells eerste */
 	font-family: "brenner mono";
@@ -614,20 +675,18 @@ You probably want to change the styling.
 
 
 .p24 span {
-	/* cells eerste */
 	font-family: "brenner mono";
 	font-size: 16px;
 	font-style: italic;
 }
-
 .p24.on span:first-of-type {
 	opacity: 1;
 	transition: 0s;
-	font-size: 18px;
+	font-size: 16px;
 }
 .p24.on span:first-of-type(2)  {
 	opacity: 1;
-	transition: 0.5s .05s;
+	transition: 0.5s .1s;
 	font-size: 18px;
 }
 .p24.on span:first-of-type(3)  {
@@ -637,17 +696,17 @@ You probably want to change the styling.
 }
 .p24.on span:first-of-type(4)  {
 	opacity: 1;
-	transition: 0.5s 0.3s;
+	transition: 0.5s 0.4s;
 	font-size: 18px;
 }
 .p24.on span:first-of-type(5) {
 	opacity: 1;
-	transition: 0.5s 0.4s;
+	transition: 0.5s 0.5s;
 	font-size: 18px;
 }
 .p24.on span:first-of-type(6) {
 	opacity: 1;
-	transition: 0.5s 0.5s;
+	transition: 0.5s 0.6s;
 	font-size: 18px;
 }
 .p24.on span:first-of-type(7) {
@@ -660,14 +719,12 @@ You probably want to change the styling.
 	transition:  0.5s 0.7s;
 	font-size: 18px;
 }
-
 .p24.on span:nth-of-type(9) {
 	opacity: 1;
 	transition: 0.5s 0.8s;
 	font-size: 18px;
 	font-weight: 600;
 }
-
 .p24.on span:nth-of-type(10) {
 	opacity: 1;
 	transition: 0.5s 0.9s;
@@ -1065,20 +1122,17 @@ You probably want to change the styling.
 	font-size: 16px;
 	font-style:italic
 }
-
 .p40.on span:first-of-type {
 	opacity: 1;
 	transition: 0s;
 	font-size: 18px;
 }
-
 .p40.on span:nth-of-type(2) {
 	opacity: 1;
 	transition: 0.4s .1s;
 	font-size: 18px;
 	font-weight: 600;
 }
-
 .p40.on span:nth-of-type(3) {
 	opacity: 1;
 	transition: 0.4s .3s;
@@ -1111,34 +1165,38 @@ You probably want to change the styling.
 	transition: 0.5s .9s;
 	font-size: 18px;
 }
-
 .p40.on span:nth-of-type(9) {
 	opacity: 1;
 	transition: 0.5s 1s;
 	font-style: normal;
+	font-size: 18px;
 }
-
 .p40.on span:nth-of-type(10) {
 	opacity: 1;
 	transition: 0.5s 1.1s;
 	font-style: normal;
+	font-size: 18px;
 }
 .p40.on span:nth-of-type(11) {
 	opacity: 1;
 	transition: 0.5s 1.2s;
 	font-style: normal;
+	font-size: 18px;
 }
 
 .p41.on {
 	/* cells tweede */
+	color: #FF0099;
 	font-family: "brenner mono medium";
 	font-size: 16px;
+	/* animation: 0.5s flash 0.3s; */
 }
 
 .p42.on {
 	/* cells tweede */
 	font-family: "brenner mono medium";
 	font-size: 16px;
+	/* animation: 0.5s flash 0.3s; */
 }
 
 .p43.on {
@@ -1148,13 +1206,39 @@ You probably want to change the styling.
 }
 
 .p44.on {
-	/* cells tweede */
 	font-family: "brenner";
 	font-size: 16px;
 }
 
+#closed-captions .p44.on{
+	font-family: "brenner";
+	font-size: 16px;
+	position: absolute;
+	text-align: center;
+	padding: 25px;
+	/* background-color: rgb(233, 236, 39); */
+	border: 1px solid #000000;
+	width: 765px;
+	text-align: center;
+	margin-top:-100px;
+	margin-left: 305px;
+}
+
+#closed-captions .p45.on{
+	font-family: "brenner script";
+	font-size: 16px;
+	position: absolute;
+	text-align: center;
+	padding: 25px;
+	/* background-color: rgb(233, 236, 39); */
+	border: 1px solid #000000;
+	width: 765px;
+	text-align: center;
+	margin-top:-100px;
+	margin-left: 305px;
+}
 .p45.on {
-	/* cells tweede */
+	/* cells eerste */
 	font-family: "brenner script";
 	font-size: 16px;
 }
@@ -1171,6 +1255,275 @@ You probably want to change the styling.
 	font-size: 14px;
 }
 
+
+.p48.on {
+	font-family:"Brenner Sans Condensed Medium";
+	font-size: px;
+}
+
+.p49.on {
+	font-family:"Brenner mono medium";
+	font-size: 18px;
+}
+
+/* .p50.on {
+	font-family:"Brenner Sans Condensed Medium";
+	font-style: italic;
+	font-size: 18px;
+} */
+
+.p50 span {
+	/* cells eerste */
+	font-family:"Brenner Sans Condensed Medium";
+	font-style: italic;
+	font-size: 18px;
+}
+
+.p50.on span:first-of-type {
+	opacity: 1;
+	transition: 0s;
+	font-size: 18px;
+}
+.p50.on span:nth-of-type(9) {
+	opacity: 1;
+	transition: 0.5s 1.1s;
+	font-size: 22px;
+	font-style: normal;
+}
+
+
+.p51.on {
+	font-family:"Brenner mono medium";
+	font-size: 18px;
+}
+
+/* .p52.on {
+	font-family:"Brenner Sans Condensed Medium";
+	font-style: italic;
+	font-size: 18px;
+} */
+
+.p52 span {
+	font-family:"Brenner Sans Condensed Medium";
+	font-style: italic;
+	font-size: 18px;
+}
+
+.p52.on span:first-of-type {
+	opacity: 1;
+	transition: 0.3s;
+	font-size: 18px;
+}
+.p52.on span:nth-of-type(16) {
+	opacity: 1;
+	transition: 0.5s 2.3s;
+	font-size: 22px;
+	font-style: normal;
+}
+.p53.on {
+	font-family:"Brenner mono medium";
+	font-size: 18px;
+}
+/* .p54.on {
+	font-family:"Brenner Sans Condensed Medium";
+	font-style: italic;
+	font-size: 18px;
+} */
+
+.p54 span {
+	font-family:"Brenner Sans Condensed Medium";
+	font-style: italic;
+	font-size: 18px;
+}
+
+.p54.p0.on span:first-of-type {
+	opacity: 1;
+	transition: 0s;
+	font-size: 18px;
+}
+.p54.on span:nth-of-type(2) {
+	opacity: 1;
+	transition: 0s 0.2s;
+	font-size: 22px;
+	font-style: normal;
+}
+.p55.on {
+	font-family:"Brenner Sans Condensed Medium";
+	font-size: 22px;
+}
+.p56.on {
+	font-family:"Brenner mono medium";
+	font-size: 18px;
+}
+.p57.on {
+	font-family:"Brenner Sans Condensed Medium";
+	font-size: 22px;
+}
+.p58.on {
+	font-family:"Brenner mono medium";
+	font-size: 18px;
+}
+.p59.on {
+	font-family:"Brenner Sans Condensed Medium";
+	font-size: 22px;
+}
+.p60.on {
+	font-family:"Brenner mono medium";
+	font-size: 18px;
+}
+
+.p61 span {
+	font-family:"Brenner Sans Condensed Medium";
+	font-style: italic;
+	font-size: 18px;
+}
+
+.p61.on span:first-of-type {
+	opacity: 1;
+	transition: 0.3s;
+	font-size: 18px;
+}
+.p61.on span:nth-of-type(10) {
+	opacity: 1;
+	transition: 0.5s 2s;
+	font-size: 22px;
+	font-style: normal;
+}
+
+.p62.on {
+	font-family:"Brenner mono medium";
+	font-size: 18px;
+}
+
+.p63 span {
+	font-family:"Brenner Sans Condensed Medium";
+	font-style: italic;
+	font-size: 18px;
+}
+
+.p63.on span:first-of-type {
+	opacity: 1;
+	transition: 0.3s;
+	font-size: 18px;
+}
+.p63.on span:nth-of-type(10) {
+	opacity: 1;
+	transition: 0.5s 1.9s;
+	font-size: 22px;
+	font-style: normal;
+}
+
+.p64.on {
+	font-family:"Brenner mono medium";
+	font-size: 18px;
+}
+
+.p65 span {
+	font-family:"Brenner Sans Condensed Medium";
+	font-size: 18px;
+	opacity: 0;
+}
+
+.p65.on span:first-of-type {
+	opacity: 1;
+	transition: 0s;
+	font-size: 18px;
+}
+.p65.on span:nth-of-type(2) {
+	opacity: 1;
+	transition: 0.15s;
+	font-size: 22px;
+	font-style: normal;
+}
+.p65.on span:nth-of-type(3) {
+	opacity: 1;
+	transition: 0.3s;
+	font-size: 22px;
+	font-style: normal;
+}
+
+.p66 span {
+	font-family:"Brenner mono Medium";
+	font-size: 18px;
+	opacity: 0;
+}
+
+.p66.on span:first-of-type {
+	opacity: 1;
+	transition: 0s;
+	font-size: 18px;
+}
+.p66.on span:nth-of-type(2) {
+	opacity: 1;
+	transition: 0.1s;
+	font-size: 22px;
+}
+.p66.on span:nth-of-type(3) {
+	opacity: 1;
+	transition: 0.2s;
+	font-size: 22px;
+}
+
+.p67.on {
+	font-family:"Brenner Sans Condensed Medium";
+	font-size: 22px;
+}
+
+.p68.on {
+	font-family:"Brenner mono medium";
+	font-size: 18px;
+}
+
+.p69.on {
+	font-family:"Brenner Sans Condensed Medium";
+	font-size: 22px;
+}
+
+.p70.on {
+	font-family:"Brenner mono medium";
+	font-size: 18px;
+}
+
+.p71.on {
+	font-family:"Brenner Sans Condensed Medium";
+	font-size: 22px;
+}
+
+.p72.on {
+	font-family:"Brenner mono medium";
+	font-size: 18px;
+}
+
+.p73.on {
+	font-family:"Brenner Sans Condensed Medium";
+	font-size: 22px;
+}
+
+.p74.on {
+	font-family:"Brenner mono medium";
+	font-size: 18px;
+}
+.p75.on {
+	font-family:"Brenner Sans Condensed Medium";
+	font-size: 22px;
+}
+.p76.on {
+	font-family:"Brenner mono medium";
+	font-size: 18px;
+}
+.p77.on {
+	font-family:"Brenner Sans Condensed Medium";
+	font-size: 22px;
+}
+
+.p78.on {
+	font-family:"Brenner mono medium";
+	font-size: 18px;
+}
+.p79.on {
+	font-family:"Brenner Sans Condensed Medium";
+	font-size: 22px;
+}
 
 /* **********************************************
 Basic layout.
@@ -1250,9 +1603,8 @@ Sounds.
 }
 
 .sound1 {
-	background: #101010;
-	animation:  0.5s horizontal-shaking 0.3s;
-	animation-iteration-count: .5;
+	animation:  0.3s horizontal-shaking 0.3s;
+	animation-iteration-count: 2;
 	/* background: url('https://giphy.com/clips/3d-80s-derps-IUbIhbDiaWZsMhC4tC') no-repeat; */
 	background: url('https://media.giphy.com/media/7WgtYJAEnksobOm1is/giphy-downsized-large.gif') no-repeat;
 	/* https://media.giphy.com/media/CJzxeevfkefecfVbU5/giphy.gif https://media.giphy.com/media/rnTrCog8df0CAUtMFz/giphy.gif https://media.giphy.com/media/rnTrCog8df0CAUtMFz/giphy.gifhttps://media.giphy.com/media/xTiTnqbp4wCeotMYSI/giphy.gif */
@@ -1263,10 +1615,8 @@ Sounds.
 }
 
 .sound2{
-	
-	background: #101010;
-	animation:  0.5s horizontal-shaking 0.3s;
-	animation-iteration-count: .5;
+	animation:  0.3s horizontal-shaking 0.3s;
+	animation-iteration-count: 2;
 	/* background: url('https://giphy.com/clips/3d-80s-derps-IUbIhbDiaWZsMhC4tC') no-repeat; */
 	/* background: url('https://media.giphy.com/media/tL5HmgfZi0Qow/giphy.gif') no-repeat; */
 	/* https://media.giphy.com/media/CJzxeevfkefecfVbU5/giphy.gif https://media.giphy.com/media/rnTrCog8df0CAUtMFz/giphy.gif https://media.giphy.com/media/rnTrCog8df0CAUtMFz/giphy.gifhttps://media.giphy.com/media/xTiTnqbp4wCeotMYSI/giphy.gif */
@@ -1279,40 +1629,54 @@ Sounds.
 	background: #980000;
 	/* animation: groter1 0.7; */
 	/* transition: 0.3s; */
-	animation: groter 1.3s ease-in;
+	animation: groter 1.3s ease-in-out;
 }
 
-.sound3.p3.on #closed-captions {
-	opacity: 0;
-}
+/* .sound3.p3.on #closed-captions {
+	opacity: 1;
+} */
 
-/* .sound3  .p1.on{
+/* .p1.on .sound3 {
 	color:#980000;
 	background: #980000;
 } */
 
-/* #closed-captions .p1.on{
+/* #closed-captions .sound3{
 	background: none;
 	border: none;
 } */
+/* .sound3 , #closed-captions .p3.on{
+	opacity: 0;
+	transition: .05s;
 
+	position: absolute;
+
+	text-align: center;
+	background-color: rgb(182, 59, 153);
+	border: 25px solid white;
+	width: 765px;
+	text-align: center;
+	margin-top:-100px;
+	margin-left: 305px;
+} */
 
 .sound4{
 	/* background: #101010; */
 	background: url('https://media.giphy.com/media/7WgtYJAEnksobOm1is/giphy-downsized-large.gif') no-repeat;
 	background-size: cover;
 	background-position-y: -5em;
-
 }
 
 .sound5  {
 	background: #000000;
 }
-
 .sound5 #cirkel {
 	z-index: -1;
 	border-radius: 50%;
 	background-color: #980000;
+	/* background: url(https://media.giphy.com/media/jQS9YkJXofyeI/giphy.gif);
+	background-size: cover;
+	background-position: center; */
 	width: 175px;
     height: 175px;
 	position: absolute;
@@ -1331,7 +1695,6 @@ Sounds.
 	/* background: url('https://media.giphy.com/media/8DguZ6zMuBM6YiHHFC/giphy.gif') no-repeat; */
 	background-size: cover;
 	background-position: center;
-	
 }
 
 .sound7{
@@ -1339,7 +1702,7 @@ Sounds.
 	animation-iteration-count: 2;
 }
 .sound7 #tekstwolk{
-	opacity: 0.5;
+	opacity: 0.3;
 	z-index:2;
 	background-image: url(../img/tekstwolk.png);
 	background-repeat: no-repeat;
@@ -1351,7 +1714,7 @@ Sounds.
 	height:50px; 
 }
 .sound7 #tekstwolkk{
-	opacity: 0.5;
+	opacity: 0.3;
 	z-index:2;
 	background-image: url(../img/tekstwolkk.png);
 	background-repeat: no-repeat;
@@ -1363,7 +1726,7 @@ Sounds.
 	height:50px; 
 }
 .sound7 #tekstwolk1{
-	opacity: 0.5;
+	opacity: 0.3;
 	z-index:3;
 	background-image: url(../img/tekstwolk.png);
 	background-repeat: no-repeat;
@@ -1375,7 +1738,7 @@ Sounds.
 	height:50px; 
 }
 .sound7 #tekstwolkk1{
-	opacity: 0.5;
+	opacity: 0.3;
 	z-index:3;
 	background-image: url(../img/tekstwolkk.png);
 	background-repeat: no-repeat;
@@ -1387,7 +1750,7 @@ Sounds.
 	height:50px; 
 }
 .sound7 #tekstwolk2{
-	opacity: 0.5;
+	opacity: 0.3;
 	z-index:3;
 	background-image: url(../img/tekstwolk.png);
 	background-repeat: no-repeat;
@@ -1399,7 +1762,7 @@ Sounds.
 	height:50px; 
 }
 .sound7 #tekstwolkk2{
-	opacity: 0.5;
+	opacity: 0.3;
 	z-index:3;
 	background-image: url(../img/tekstwolkk.png);
 	background-repeat: no-repeat;
@@ -1411,7 +1774,7 @@ Sounds.
 	height:50px; 
 }
 .sound7 #tekstwolk3{
-	opacity: 0.5;
+	opacity: 0.3;
 	z-index:3;
 	background-image: url(../img/tekstwolk.png);
 	background-repeat: no-repeat;
@@ -1423,7 +1786,7 @@ Sounds.
 	height:50px; 
 }
 .sound7 #tekstwolkk3{
-	opacity: 0.5;
+	opacity: 0.3;
 	z-index:3;
 	background-image: url(../img/tekstwolkk.png);
 	background-repeat: no-repeat;
@@ -1436,7 +1799,7 @@ Sounds.
 }
 
 .sound7 #tekstwolkkk{
-	opacity: 0.5;
+	opacity: 0.3;
 	z-index:2;
 	background-image: url(../img/tekstwolkkk.png);
 	background-repeat: no-repeat;
@@ -1449,7 +1812,7 @@ Sounds.
 }
 
 .sound7 #tekstwolkkk1{
-	opacity: 0.5;
+	opacity: 0.3;
 	z-index:2;
 	background-image: url(../img/tekstwolkkk.png);
 	background-repeat: no-repeat;
@@ -1462,7 +1825,7 @@ Sounds.
 }
 
 .sound7 #tekstwolkkkk{
-	opacity: 0.5;
+	opacity: 0.3;
 	z-index:2;
 	background-image: url(../img/tekstwolkkkk.png);
 	background-repeat: no-repeat;
@@ -1475,7 +1838,7 @@ Sounds.
 }
 
 .sound7 #tekstwolkkkk1{
-	opacity: 0.5;
+	opacity: 0.3;
 	z-index:2;
 	background-image: url(../img/tekstwolkkkk.png);
 	background-repeat: no-repeat;
@@ -1494,6 +1857,9 @@ Sounds.
 	z-index: -1;
 	border-radius: 50%;
 	background-color: #980000;
+	background: url(https://media.giphy.com/media/jQS9YkJXofyeI/giphy.gif);
+	background-size: cover;
+	background-position: center;
 	width: 175px;
     height: 175px;
 	position: absolute;
@@ -1563,6 +1929,9 @@ Sounds.
 	border-radius: 50%;
 	/* box-shadow: 1em #ffffff; */
 	background-color: #980000;
+	background: url(https://media.giphy.com/media/jQS9YkJXofyeI/giphy.gif);
+	background-size: cover;
+	background-position: center;
 	width: 175px;
     height: 175px;
 	position: absolute;
@@ -1690,7 +2059,7 @@ Sounds.
 
 .sound14{
 	animation: verti-shaking 0.5s;
-	animation-iteration-count: 2;
+	animation-iteration-count: 4;
 }
 
 .sound15 #cirkel2 {
@@ -1699,6 +2068,9 @@ Sounds.
 	opacity: 0.7;
 	background-color: #980000;
 	/* background-color: #980000; */
+	background: url(https://media.giphy.com/media/jQS9YkJXofyeI/giphy.gif);
+	background-size: cover;
+	background-position: center;
 	width: 175px;
     height: 175px;
 	position: absolute;
@@ -1771,12 +2143,10 @@ Sounds.
 	background-size: cover;
 	background-position: center;
 }
-
-.sound16 #doos {
-	opacity: 0.9;
-	/* background: ; */
+.sound16 .doos {
+	opacity: 0.8;
 	position: absolute;
-	background-color: #141414;
+	background-color: #383838;
 	z-index: -1;
 	width:1500px;
 	height: 800px;
@@ -1796,21 +2166,20 @@ Sounds.
 } */
 
 .sound17 {
-	background: transparent url('https://media.giphy.com/media/C4wlXJlgP2QhO/giphy.gif');
+	/* background: transparent url('https://media.giphy.com/media/C4wlXJlgP2QhO/giphy.gif');
 	background-size: cover;
-	background-position: center;
-	animation: groter2 22s ease-in;
+	background-position: center; */
+	animation: groter2 38.3s linear;
 }
 
-.sound17 #doos {
+/* .sound17 #doos {
 	opacity: 0.9;
-	/* background: ; */
 	position: absolute;
-	background-color: #141414;
+	background-color: #0b0b0b;
 	z-index: -1;
 	width:1500px;
 	height: 800px;
-}
+} */
 
 
 .sound19 {
@@ -1820,14 +2189,15 @@ Sounds.
 	background: transparent url('https://media.giphy.com/media/C4wlXJlgP2QhO/giphy.gif');
 	background-size: cover;
 	background-position: center;
-	animation: groter3 21.5s ease-in;
+	/* animation: groter3 21.5s ease-in; */
 }
 
-.sound19 #doos {
-	opacity: 0.7;
+.sound19 .doos {
+	opacity: 0.6;
+	transition: 1s;
 	/* background: ; */
 	position: absolute;
-	background-color: #141414;
+	background-color: #383838;
 	z-index: -1;
 	width:1500px;
 	height: 800px;
@@ -1835,17 +2205,18 @@ Sounds.
 
 .sound20 {
 	/* background: #8b5978; */
-	ackground: transparent url('https://media.giphy.com/media/C4wlXJlgP2QhO/giphy.gif');
+	background: transparent url('https://media.giphy.com/media/C4wlXJlgP2QhO/giphy.gif');
 	background-size: cover;
 	background-position: center;
-	animation: groter4 1.8s;
+	/* animation: groter4 1.8s; */
 }
 
-.sound20 #doos {
-	opacity: 0.5;
+.sound20 .doos {
+	opacity: 0.3;
+	transition: 1s;
 	/* background: ; */
 	position: absolute;
-	background-color: #141414;
+	background-color: #383838;
 	z-index: -1;
 	width:1500px;
 	height: 800px;
@@ -1853,37 +2224,96 @@ Sounds.
 
 .sound21 {
 	/* background: #6da457; */
-	animation: groter5 1.7s ease-in-out;
+	/* animation: groter5 1.7s ease-in-out; */
 }
 
 .sound22 {
 	/* background: #553393; */
-	animation: groter6 1.8s ease-in-out;
+	/* animation: groter6 1.8s ease-in-out; */
 }
 
-.sound23 {
-	/* background: #5fc96d; */
+/* .sound23 {
 	animation: groter7 1.5s ease-in-out;
-}
-
+} */
 .sound23 {
-	background: #5f6dc9;
+	/* background: #8b5978; */
+	/* background: transparent url('https://media.giphy.com/media/C4wlXJlgP2QhO/giphy.gif');
+	background-size: cover;
+	background-position: center; */
+	/* animation: groter4 1.8s; */
+	/* animation: groter7 1.5s ease-in-out; */
+	/* background: #980000; */
+	/* z-index:2;
+	transition: none;
+	background-image: url(../img/achter.png);
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover; */
 }
 
+.sound23 .doos {
+	opacity: 0.1;
+	position: absolute;
+	background-color: #383838;
+	/* background-position: -2em; */
+	z-index: -1;
+	width:3200px;
+	height: 3200px;
+	margin-left: -1000px;
+	margin-top:-500px ;
+}
+
+.sound24{
+	z-index:2;
+	/* transition: none;
+	background-image: url(../img/achter.png);
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover; */
+	background: #ffffff;
+	animation: gewoon 5s;
+}
+
+.sound24 .doos {
+	/* opacity: 0.3;
+	width:3200px;
+	height: 3000px;
+	margin-left: -700px;
+	margin-top:-500px ; */
+	opacity: 0;
+}
 .sound25 {
-	animation: groter8 2s;
+	background: #ffffff;
+	animation: 0.5s flash 0.3s;
+	/* animation: groter8 2s; */
+}
+.sound25 .doos {
+	/* opacity: 1; */
+	opacity: 0;
 }
 
-.sound26{
+.sound26 {
+	background: #000000;
+}
+
+.sound27{
 	background: url('https://media.giphy.com/media/JnA0PExTL17t8lwAT2/giphy.gif ') no-repeat;
 /* https://media.giphy.com/media/CJzxeevfkefecfVbU5/giphy.gif https://media.giphy.com/media/rnTrCog8df0CAUtMFz/giphy.gif https://media.giphy.com/media/rnTrCog8df0CAUtMFz/giphy.gifhttps://media.giphy.com/media/xTiTnqbp4wCeotMYSI/giphy.gif; */
 	background-size: cover;
 	background-position: center;
 }
 
-.sound27 {
-	background: #5f6dc9;
+.sound28 .doos {
+	width:3200px;
+	height: 1700px;
+	background: transparent url('https://media.giphy.com/media/C4wlXJlgP2QhO/giphy.gif') no-repeat;
+	background-size: contain;
+	background-position: center;
+	opacity: 0.5;
+	position: absolute;
+	z-index: -1;
 }
+
 
 /* .sound10 #cirkel {
 	border-radius: 50%;
@@ -1909,11 +2339,9 @@ Sounds.
 	justify-items: center;
 	animation: groter 8s ease-in; */
 
-/* .sound3 {
-	background: #101010;
-	margin: 30px;
-} */
+/* .sound28 {
 
+} */
 /* .sound3 #video-container {
 	margin: auto;
 	position: absolute;
@@ -1946,11 +2374,6 @@ Sounds.
 
 
 @keyframes horizontal-shaking {
-	/* 0% { transform: translateX(0)  }
-	25% { transform: translateX(4px) }
-	50% { transform: translateX(-4px) }
-	75% { transform: translateX(4px) }
-	100% { transform: translateX(0) } */
 	0% { transform: translate(0, 0) rotate(0deg); }
     25% { transform: translate(4px, 4px) rotate(2deg); }
     50% { transform: translate(0, 0) rotate(0eg); }
@@ -1967,6 +2390,12 @@ Sounds.
 	100% { transform: translateY(0) }
 }
 
+
+@keyframes gewoon {
+	0% {transform: scale(1,1)}
+	100% {transform: scale(1, 1)}
+}
+
 @keyframes groter {
 	0% {transform: scale(1,1)}
 	100% {transform: scale(1.3, 1.3)}
@@ -1979,16 +2408,16 @@ Sounds.
 
 @keyframes groter2{
 	0% {transform: scale(1,1)}
-	100% {transform: scale(1.2, 1.2)}
+	100% {transform: scale(1.55,1.55)}
 }
 
-@keyframes groter3{
-	0% {transform: scale(1.15,1.15)}
+/* @keyframes groter3{
+	0% {transform: scale(1.1,1.1)}
 	100% {transform: scale(1.3, 1.3)}
-}
+} */
 
 @keyframes groter4{
-	0% {transform: scale(1.3,1.3)}
+	0% {transform: scale(1.25,1.25)}
 	100% {transform: scale(1.35, 1.35)}
 }
 @keyframes groter5{
@@ -2012,8 +2441,8 @@ Sounds.
 }
 
 @keyframes kleur{
-	0% {background-color: #101010}
-	100% {background-color: #606060;}
+	0% {background-color: #141414}
+	100% {background-color: #777777;}
 }
 
 /* @keyframes shake {
@@ -2045,10 +2474,21 @@ Sounds.
 	100% {
 	transform: scale(15, 15);
 	opacity: 1;
+	}
+}
 
-	/* box-shadow: 0 0 1.5em rgba(255,0,0,1),
-	0 0 1em rgba(255,0,0,1) inset;
-    border-color: rgba(200,0,0,1); */
+@keyframes flash {
+	0% {
+	opacity: 1;
+	color: #383838;
+	}
+	50% {
+	opacity: 0;
+	color: #383838;
+	}
+	100% {
+	opacity: 1;
+	color: #383838;
 	}
 }
 
