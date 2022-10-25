@@ -80,7 +80,7 @@ Feel free to adjust the defaults to your needs.
 }
 .voice2 {
 	/* font-weight: bold; */
-	color:#FF0099;
+	color:#27299f;
 }
 
 .voice4 {
@@ -88,11 +88,8 @@ Feel free to adjust the defaults to your needs.
 }
 
 .voice5 {
-	/* font-weight: bold; */
 	color:#980000;
 }
-
-
 
 
 
@@ -116,7 +113,7 @@ You probably want to change the styling.
 .p0.on span:first-of-type {
 	opacity: 1;
 	transition: 0s;
-	font-weight: 200;
+	/* font-weight: 200; */
 	margin: 0px;
 }
 .p0.on span:nth-of-type(2) {
@@ -177,11 +174,7 @@ You probably want to change the styling.
 	font-family: "brenner slab medium";
 }
 
-
-
 .p1.on {
-	/* background: hotpink; */
-	/* color: red; */
 	opacity: 0;
 	font-size: 14px;
 	font-family: "brenner sans bold";
@@ -195,7 +188,7 @@ You probably want to change the styling.
 
 .sound3 .p1.on{
 	opacity: 0;
-	font-family: "brenner mono";
+	font-family: "brenner mono medium";
 	width: 0px;
 	height: 0px;
 	font-size: 0px;
@@ -277,7 +270,7 @@ You probably want to change the styling.
 
 .p8.on {
 	/* cells eerste */
-	font-family: "brenner mono";
+	font-family: "brenner mono medium";
 	/* font-size: 200px; */
 	font-size: 22px;
 	font-weight: 400px;
@@ -345,7 +338,7 @@ You probably want to change the styling.
 .p11
 .on {
 	/* cells eerste */
-	font-family: "brenner mono";
+	font-family: "brenner mono medium";
 	font-size: 22px;
 }
 
@@ -368,33 +361,28 @@ You probably want to change the styling.
 	font-size: 16px;
 	font-style: italic;
 }
-
 .p13.on span:first-of-type {
 	opacity: 1;
 	transition: 0s;
 	font-size: 18px;
 }
-
 .p13.on span:nth-of-type(2) {
 	opacity: 1;
 	transition: 0.5s 0.05s;
 	font-size: 18px;
 	font-weight: 600;
 }
-
 .p13.on span:nth-of-type(3) {
 	opacity: 1;
 	transition: 0.5s .05s;
 	font-size: 18px;
 	font-weight: 600;
 }
-
 .p13.on span:nth-of-type(4) {
 	opacity: 1;
 	transition: 0.5s 0.2s;
 	font-size: 18px;
 }
-
 .p13.on span:nth-of-type(5) {
 	opacity: 1;
 	transition: 0.5s .3s;
@@ -405,18 +393,17 @@ You probably want to change the styling.
 	transition: 0.5s .40s;
 	font-size: 18px;
 }
-
 .p13.on span:nth-of-type(7) {
 	opacity: 1;
 	transition: 0.5s .50s;
 	font-size: 18px;
 }
-
 .p13.on span:nth-of-type(8) {
 	opacity: 1;
 	transition: 0.5s .60s;
 	font-size: 18px;
 }
+
 
 .p14.on {
 	/* cells eerste */
@@ -428,14 +415,8 @@ You probably want to change the styling.
 	/* cells tweede */
 	font-family: "brenner mono medium";
 	font-size: 14px;
+	animation: 0.2s flash 0.2s;
 }
-
-/* .p16.on {
-	font-family: "brenner mono";
-	font-size: 16px;
-	font-weight: 400px;
-	font-style: italic;
-} */
 
 .p16 span {
 	/* cells eerste */
@@ -443,7 +424,6 @@ You probably want to change the styling.
 	font-size: 16px;
 	font-style: italic;
 }
-
 .p16.on span:first-of-type {
 	opacity: 1;
 	transition: 0s;
@@ -548,14 +528,8 @@ You probably want to change the styling.
 	/* cells */
 	font-family: "brenner mono medium";
 	font-size: 14px;
+	animation: 0.2s flash 0.2s;
 }
-
-/* .p21.on {
-	font-family: "brenner mono";
-	font-size: 16px;
-	font-weight: 400px;
-} */
-
 
 .p21 span {
 	/* cells eerste */
@@ -572,7 +546,6 @@ You probably want to change the styling.
 	font-size: 18px;
 	/* text-decoration: underline; */
 }
-
 .p21.on span:nth-of-type(2) {
 	opacity: 1;
 	transition: 0.5s 0.05s;
@@ -580,7 +553,6 @@ You probably want to change the styling.
 	/* text-decoration: underline; */
 	font-weight: 600;
 }
-
 .p21.on span:nth-of-type(3) {
 	opacity: 1;
 	transition: 0.5s .2s;
@@ -595,7 +567,6 @@ You probably want to change the styling.
 	/* text-decoration: underline; */
 	font-weight: 600;
 }
-
 .p21.on span:nth-of-type(5) {
 	opacity: 1;
 	transition: 0.5s .45s;
@@ -603,7 +574,6 @@ You probably want to change the styling.
 	/* text-decoration: underline; */
 	font-weight: 600;
 }
-
 .p21.on span:nth-of-type(6) {
 	opacity: 1;
 	transition: 0.5s .6s;
@@ -611,7 +581,6 @@ You probably want to change the styling.
 	/* text-decoration: underline; */
 	font-weight: 600;
 }
-
 .p21.on span:nth-of-type(7) {
 	opacity: 1;
 	transition: 0.5s .8s;
@@ -619,7 +588,6 @@ You probably want to change the styling.
 	/* text-decoration: underline; */
 	font-weight: 600;
 }
-
 .p21.on span:nth-of-type(8) {
 	opacity: 1;
 	transition: 0.5s 1s;
@@ -633,21 +601,18 @@ You probably want to change the styling.
 	font-size: 18px;
 	/* text-decoration: underline; */
 }
-
 .p21.on span:nth-of-type(10) {
 	opacity: 1;
 	transition: 0.5s 1.2s;
 	font-size: 18px;
 	/* text-decoration: underline; */
 }
-
 .p21.on span:nth-of-type(11) {
 	opacity: 1;
 	transition: 0.5s 1.3s;
 	font-size: 18px;
 	/* text-decoration: underline; */
 }
-
 .p21.on span:nth-of-type(12) {
 	opacity: 1;
 	transition: 0.5s 1.4s;
@@ -665,6 +630,7 @@ You probably want to change the styling.
 	/* cells tweede */
 	font-family: "brenner mono medium";
 	font-size: 14px;
+	animation: 0.2s flash 0.2s;
 }
 
 /* .p24.on {
@@ -749,6 +715,7 @@ You probably want to change the styling.
 	/* cells tweede */
 	font-family: "brenner mono medium";
 	font-size: 14px;
+	animation: 0.2s flash 0.2s;
 }
 
 /* .p27.on {
@@ -762,63 +729,53 @@ You probably want to change the styling.
 	font-size: 16px;
 	font-style: italic;
 }
-
 .p27.on span:first-of-type {
 	opacity: 1;
 	transition: 0s;
 	font-size: 18px;
 }
-
 .p27.on span:nth-of-type(2) {
 	opacity: 1;
 	transition: 0.5s 0.05s;
 	font-size: 18px;
 	font-weight: 600;
 }
-
 .p27.on span:nth-of-type(3) {
 	opacity: 1;
 	transition: 0.5s .15s;
 	font-size: 18px;
 	font-weight: 600;
 }
-
 .p27.on span:nth-of-type(4) {
 	opacity: 1;
 	transition: 0.5s 0.3s;
 	font-size: 18px;
 }
-
 .p27.on span:nth-of-type(5) {
 	opacity: 1;
 	transition: 0.5s .4s;
 	font-size: 18px;
 }
-
 .p27.on span:nth-of-type(6) {
 	opacity: 1;
 	transition: 0.5s .5s;
 	font-size: 18px;
 }
-
 .p27.on span:nth-of-type(7) {
 	opacity: 1;
 	transition: 0.5s 0.6s;
 	font-size: 18px;
 }
-
 .p27.on span:nth-of-type(8) {
 	opacity: 1;
 	transition: 0.5s .7s;
 	font-size: 18px;
 }
-
 .p27.on span:nth-of-type(9) {
 	opacity: 1;
 	transition: 0.5s 0.8s;
 	font-size: 18px;
 }
-
 .p27.on span:nth-of-type(10) {
 	opacity: 1;
 	transition: 0.5s .9s;
@@ -840,6 +797,7 @@ You probably want to change the styling.
 	/* cells tweede */
 	font-family: "brenner mono medium";
 	font-size: 14px;
+	animation: 0.2s flash 0.2s;
 }
 
 /* .p30.on {
@@ -854,63 +812,53 @@ You probably want to change the styling.
 	font-size: 16px;
 	font-style: italic;
 }
-
 .p30.on span:first-of-type {
 	opacity: 1;
 	transition: 0s;
 	font-size: 18px;
 }
-
 .p30.on span:nth-of-type(2) {
 	opacity: 1;
 	transition: 0.5s 0.05s;
 	font-size: 18px;
 	font-weight: 600;
 }
-
 .p30.on span:nth-of-type(3) {
 	opacity: 1;
 	transition: 0.5s .15s;
 	font-size: 18px;
 	font-weight: 600;
 }
-
 .p30.on span:nth-of-type(4) {
 	opacity: 1;
 	transition: 0.5s 0.3s;
 	font-size: 18px;
 }
-
 .p30.on span:nth-of-type(5) {
 	opacity: 1;
 	transition: 0.5s .4s;
 	font-size: 18px;
 }
-
 .p30.on span:nth-of-type(6) {
 	opacity: 1;
 	transition: 0.5s .5s;
 	font-size: 18px;
 }
-
 .p30.on span:nth-of-type(7) {
 	opacity: 1;
 	transition: 0.5s 0.6s;
 	font-size: 18px;
 }
-
 .p30.on span:nth-of-type(8) {
 	opacity: 1;
 	transition: 0.5s .7s;
 	font-size: 18px;
 }
-
 .p30.on span:nth-of-type(9) {
 	opacity: 1;
 	transition: 0.5s 0.8s;
 	font-size: 18px;
 }
-
 .p30.on span:nth-of-type(10) {
 	opacity: 1;
 	transition: 0.5s .9s;
@@ -921,12 +869,8 @@ You probably want to change the styling.
 	/* cells tweede */
 	font-family: "brenner mono medium";
 	font-size: 14px;
+	animation: 0.2s flash 0.2s;
 }
-
-/* .p32.on {
-	font-family: "brenner mono";
-	font-size: 16px;
-} */
 
 .p32 span {
 	/* cells eerste */
@@ -934,20 +878,17 @@ You probably want to change the styling.
 	font-size: 16px;
 	font-style: italic;
 }
-
 .p32.on span:first-of-type {
 	opacity: 1;
 	transition: 0s;
 	font-size: 18px;
 }
-
 .p32.on span:nth-of-type(2) {
 	opacity: 1;
 	transition: 0.5s 0.05s;
 	font-size: 18px;
 	font-weight: 600;
 }
-
 .p32.on span:nth-of-type(3) {
 	opacity: 1;
 	transition: 0.5s .2s;
@@ -960,46 +901,41 @@ You probably want to change the styling.
 	font-size: 18px;
 	font-weight: 600;
 }
-
 .p32.on span:nth-of-type(5) {
 	opacity: 1;
 	transition: 0.5s .45s;
 	font-size: 18px;
 	font-weight: 600;
 }
-
 .p32.on span:nth-of-type(6) {
 	opacity: 1;
 	transition: 0.5s .5s;
 	font-size: 18px;
 	font-weight: 600;
 }
-
 .p32.on span:nth-of-type(7) {
 	opacity: 1;
 	transition: 0.5s .6s;
 	font-size: 18px;
 }
-
 .p32.on span:nth-of-type(8) {
 	opacity: 1;
 	transition: 0.5s .7s;
 	font-size: 18px;
 }
-
 .p32.on span:nth-of-type(9) {
 	opacity: 1;
 	transition: 0.5s .8s;
 	font-size: 18px;
 }
-
 .p32.on span:nth-of-type(10) {
 	opacity: 1;
 	transition: 0.5s .9s;
 	font-size: 18px;
 }
+
+
 .p33.on {
-	/* cells eerste */
 	font-family: "brenner mono";
 	font-size: 22px;
 }
@@ -1008,6 +944,7 @@ You probably want to change the styling.
 	/* cells tweede */
 	font-family: "brenner mono medium";
 	font-size: 14px;
+	animation: 0.2s flash 0.2s;
 }
 
 /* .p35.on {
@@ -1021,33 +958,28 @@ You probably want to change the styling.
 	font-size: 16px;
 	font-style: italic;
 }
-
 .p35.on span:first-of-type {
 	opacity: 1;
 	transition: 0s;
 	font-size: 18px;
 }
-
 .p35.on span:nth-of-type(2) {
 	opacity: 1;
 	transition: 0.5s 0.05s;
 	font-size: 18px;
 	font-weight: 600;
 }
-
 .p35.on span:nth-of-type(3) {
 	opacity: 1;
 	transition: 0.5s .15s;
 	font-size: 18px;
 	font-weight: 600;
 }
-
 .p35.on span:nth-of-type(4) {
 	opacity: 1;
 	transition: 0.5s 0.20s;
 	font-size: 18px;
 }
-
 .p35.on span:nth-of-type(5) {
 	opacity: 1;
 	transition: 0.5s .3s;
@@ -1063,7 +995,6 @@ You probably want to change the styling.
 	transition: 0.5s .5s;
 	font-size: 18px;
 }
-
 .p35.on span:nth-of-type(8) {
 	opacity: 1;
 	transition: 0.5s .6s;
@@ -1079,7 +1010,6 @@ You probably want to change the styling.
 	transition: 0.5s .8s;
 	font-size: 18px;
 }
-
 .p35.on span:nth-of-type(11) {
 	opacity: 1;
 	transition: 0.5s .9s;
@@ -1102,6 +1032,7 @@ You probably want to change the styling.
 	/* cells tweede */
 	font-family: "brenner mono medium";
 	font-size: 14px;
+	animation: 0.2s flash 0.2s;
 }
 
 .p38.on {
@@ -1114,6 +1045,7 @@ You probably want to change the styling.
 	/* cells tweede */
 	font-family: "brenner mono medium";
 	font-size: 14px;
+	animation: 0.5s flash 0.2s;
 }
 
 .p40 span {
@@ -1185,18 +1117,18 @@ You probably want to change the styling.
 }
 
 .p41.on {
-	/* cells tweede */
-	color: #FF0099;
+	color: #27299f;
 	font-family: "brenner mono medium";
 	font-size: 16px;
 	/* animation: 0.5s flash 0.3s; */
+	animation: 0.4s flash 0.2s;
 }
 
 .p42.on {
-	/* cells tweede */
 	font-family: "brenner mono medium";
 	font-size: 16px;
 	/* animation: 0.5s flash 0.3s; */
+	animation: 0.4s flash 0.2s;
 }
 
 .p43.on {
@@ -1431,13 +1363,13 @@ You probably want to change the styling.
 }
 .p65.on span:nth-of-type(2) {
 	opacity: 1;
-	transition: 0.15s;
+	transition: 0.1s;
 	font-size: 22px;
 	font-style: normal;
 }
 .p65.on span:nth-of-type(3) {
 	opacity: 1;
-	transition: 0.3s;
+	transition: 0.2s;
 	font-size: 22px;
 	font-style: normal;
 }
@@ -1474,9 +1406,39 @@ You probably want to change the styling.
 	font-size: 18px;
 }
 
-.p69.on {
+/* .p69.on {
 	font-family:"Brenner Sans Condensed Medium";
 	font-size: 22px;
+} */
+
+.p69 span {
+	font-family:"Brenner Sans Condensed Medium";
+	font-size: 18px;
+	opacity: 0;
+}
+
+.p69.on span:first-of-type {
+	opacity: 1;
+	transition: 0s;
+	font-size: 18px;
+}
+.p69.on span:nth-of-type(2) {
+	opacity: 1;
+	transition: 0.1s;
+	font-size: 22px;
+	font-style: normal;
+}
+.p69.on span:nth-of-type(3) {
+	opacity: 1;
+	transition: 0.2s;
+	font-size: 22px;
+	font-style: normal;
+}
+.p69.on span:nth-of-type(4) {
+	opacity: 1;
+	transition: 0.3s;
+	font-size: 22px;
+	font-style: normal;
 }
 
 .p70.on {
@@ -1484,9 +1446,39 @@ You probably want to change the styling.
 	font-size: 18px;
 }
 
-.p71.on {
+/* .p71.on {
 	font-family:"Brenner Sans Condensed Medium";
 	font-size: 22px;
+} */
+
+.p71 span {
+	font-family:"Brenner Sans Condensed Medium";
+	font-size: 18px;
+	opacity: 0;
+}
+
+.p71.on span:first-of-type {
+	opacity: 1;
+	transition: 0s;
+	font-size: 18px;
+}
+.p71.on span:nth-of-type(2) {
+	opacity: 1;
+	transition: 0.1s;
+	font-size: 22px;
+	font-style: normal;
+}
+.p71.on span:nth-of-type(3) {
+	opacity: 1;
+	transition: 0.2s;
+	font-size: 22px;
+	font-style: normal;
+}
+.p71.on span:nth-of-type(4) {
+	opacity: 1;
+	transition: 0.3s;
+	font-size: 22px;
+	font-style: normal;
 }
 
 .p72.on {
@@ -1494,27 +1486,136 @@ You probably want to change the styling.
 	font-size: 18px;
 }
 
-.p73.on {
+/* .p73.on {
 	font-family:"Brenner Sans Condensed Medium";
 	font-size: 22px;
+} */
+
+.p73 span {
+	font-family:"Brenner Sans Condensed Medium";
+	font-size: 18px;
+	opacity: 0;
+}
+
+.p73.on span:first-of-type {
+	opacity: 1;
+	transition: 0s;
+	font-size: 18px;
+}
+.p73.on span:nth-of-type(2) {
+	opacity: 1;
+	transition: 0.1s;
+	font-size: 22px;
+	font-style: normal;
+}
+.p73.on span:nth-of-type(3) {
+	opacity: 1;
+	transition: 0.2s;
+	font-size: 22px;
+	font-style: normal;
+}
+.p73.on span:nth-of-type(4) {
+	opacity: 1;
+	transition: 0.3s;
+	font-size: 22px;
+	font-style: normal;
 }
 
 .p74.on {
 	font-family:"Brenner mono medium";
 	font-size: 18px;
 }
-.p75.on {
+/* .p75.on {
 	font-family:"Brenner Sans Condensed Medium";
 	font-size: 22px;
+} */
+
+.p75 span {
+	font-family:"Brenner Sans Condensed Medium";
+	font-size: 18px;
+	opacity: 0;
+}
+
+.p75.on span:first-of-type {
+	opacity: 1;
+	transition: 0s;
+	font-size: 18px;
+}
+.p75.on span:nth-of-type(2) {
+	opacity: 1;
+	transition: 0.1s;
+	font-size: 22px;
+	font-style: normal;
+}
+.p75.on span:nth-of-type(3) {
+	opacity: 1;
+	transition: 0.2s;
+	font-size: 22px;
+	font-style: normal;
+}
+.p75.on span:nth-of-type(4) {
+	opacity: 1;
+	transition: 0.3s;
+	font-size: 22px;
+	font-style: normal;
 }
 .p76.on {
 	font-family:"Brenner mono medium";
 	font-size: 18px;
 }
-.p77.on {
+/* .p77.on {
 	font-family:"Brenner Sans Condensed Medium";
 	font-size: 22px;
+} */
+
+.p77 span {
+	font-family:"Brenner Sans Condensed Medium";
+	font-size: 18px;
+	opacity: 0;
 }
+
+.p77.on span:first-of-type {
+	opacity: 1;
+	transition: 0s;
+	font-size: 18px;
+}
+.p77.on span:nth-of-type(2) {
+	opacity: 1;
+	transition: 0.1s;
+	font-size: 22px;
+	font-style: normal;
+}
+.p77.on span:nth-of-type(3) {
+	opacity: 1;
+	transition: 0.2s;
+	font-size: 22px;
+	font-style: normal;
+}
+.p77.on span:nth-of-type(4) {
+	opacity: 1;
+	transition: 0.3s;
+	font-size: 22px;
+	font-style: normal;
+}
+.p77.on span:nth-of-type(5) {
+	opacity: 1;
+	transition: 0.4s;
+	font-size: 22px;
+	font-style: normal;
+}
+.p77.on span:nth-of-type(6) {
+	opacity: 1;
+	transition: 0.5s;
+	font-size: 22px;
+	font-style: normal;
+}
+.p77.on span:nth-of-type(7) {
+	opacity: 1;
+	transition: 0.6s;
+	font-size: 22px;
+	font-style: normal;
+}
+
 
 .p78.on {
 	font-family:"Brenner mono medium";
@@ -2284,7 +2385,7 @@ Sounds.
 }
 .sound25 {
 	background: #ffffff;
-	animation: 0.5s flash 0.3s;
+	/* animation: 0.5s flash 0.3s; */
 	/* animation: groter8 2s; */
 }
 .sound25 .doos {
@@ -2293,6 +2394,7 @@ Sounds.
 }
 
 .sound26 {
+	transition: none;
 	background: #000000;
 }
 
@@ -2314,6 +2416,25 @@ Sounds.
 	z-index: -1;
 }
 
+
+.sound30 {
+	animation: groter9 2s ease-in;
+}
+.sound32{
+	/* transition: .5s; */
+	animation: horizontal-shaking1 0.3s;
+	animation-iteration-count: 2;
+}
+
+.sound33{
+	background: url('https://media.giphy.com/media/JnA0PExTL17t8lwAT2/giphy.gif ') no-repeat;
+/* https://media.giphy.com/media/CJzxeevfkefecfVbU5/giphy.gif https://media.giphy.com/media/rnTrCog8df0CAUtMFz/giphy.gif https://media.giphy.com/media/rnTrCog8df0CAUtMFz/giphy.gifhttps://media.giphy.com/media/xTiTnqbp4wCeotMYSI/giphy.gif; */
+	background-size: cover;
+	background-position: center;
+}
+.sound34 {
+	animation: groter10 1.5s ease-in;
+}
 
 /* .sound10 #cirkel {
 	border-radius: 50%;
@@ -2368,6 +2489,14 @@ Sounds.
 	width: 625px;
 	height: 260px;
 } */
+
+@keyframes horizontal-shaking1 {
+	0% { transform: translate(0, 0) rotate(0deg); }
+    25% { transform: translate(-3px, 3px) rotate(2deg); }
+    50% { transform: translate(0, 0) rotate(0eg); }
+    75% { transform: translate(-3px, 3px) rotate(-2deg); }
+    100% { transform: translate(0, 0) rotate(0deg); }
+}
 
 
 
@@ -2440,6 +2569,16 @@ Sounds.
 	100% {transform: scale(1.1, 1.1)}
 }
 
+@keyframes groter9 {
+	0% {transform: scale(1,1)}
+	100% {transform: scale(1.05, 1.05)}
+}
+
+@keyframes groter10 {
+	0% {transform: scale(1,1)}
+	100% {transform: scale(1.05, 1.05)}
+}
+
 @keyframes kleur{
 	0% {background-color: #141414}
 	100% {background-color: #777777;}
@@ -2480,15 +2619,15 @@ Sounds.
 @keyframes flash {
 	0% {
 	opacity: 1;
-	color: #383838;
+	color: #000000;
 	}
 	50% {
 	opacity: 0;
-	color: #383838;
+	color: #000000;
 	}
 	100% {
 	opacity: 1;
-	color: #383838;
+	color: #000000;
 	}
 }
 
