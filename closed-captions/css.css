@@ -84,7 +84,7 @@ Feel free to adjust the defaults to your needs.
 }
 
 .voice4 {
-	color:#FFCC00;
+	color:#000000;
 }
 
 .voice5 {
@@ -257,9 +257,24 @@ You probably want to change the styling.
 	margin-top:-100px;
 	margin-left: 305px;
 }
-.p6.on {
-	font-size: 12px;
+.p6.on.on {
 	font-family: "brenner sans bold";
+	font-size: 12px;
+}
+
+#closed-captions .p6.on{
+	font-family: "brenner sans bold";
+	font-size: 12px;
+	position: absolute;
+	text-align: center;
+	padding: 25px;
+	color: #cc0000;
+	/* background-color: rgb(233, 236, 39); */
+	border: 2px solid #cc0000;
+	width: 765px;
+	text-align: center;
+	margin-top:-100px;
+	margin-left: 305px;
 }
 .p7.on {
 	font-size: 16px;
@@ -335,8 +350,7 @@ You probably want to change the styling.
 	transition: 0.5s .60s;
 	font-size: 18px;
 }
-.p11
-.on {
+.p11.on {
 	/* cells eerste */
 	font-family: "brenner mono medium";
 	font-size: 22px;
@@ -346,7 +360,7 @@ You probably want to change the styling.
 	/* cells tweede */
 	font-family: "brenner mono medium";
 	font-size: 14px;
-	animation: 0.2s flash 0.2s;
+	animation: 0.2s flash 0.1s;
 }
 
 /* .p13.on {
@@ -374,33 +388,33 @@ You probably want to change the styling.
 }
 .p13.on span:nth-of-type(3) {
 	opacity: 1;
-	transition: 0.5s .05s;
+	transition: 0.5s .1s;
 	font-size: 18px;
 	font-weight: 600;
 }
 .p13.on span:nth-of-type(4) {
 	opacity: 1;
-	transition: 0.5s 0.2s;
+	transition: 0.5s 0.15s;
 	font-size: 18px;
 }
 .p13.on span:nth-of-type(5) {
 	opacity: 1;
-	transition: 0.5s .3s;
+	transition: 0.5s .2s;
 	font-size: 18px;
 }
 .p13.on span:nth-of-type(6) {
 	opacity: 1;
-	transition: 0.5s .40s;
+	transition: 0.5s .25s;
 	font-size: 18px;
 }
 .p13.on span:nth-of-type(7) {
 	opacity: 1;
-	transition: 0.5s .50s;
+	transition: 0.5s .30s;
 	font-size: 18px;
 }
 .p13.on span:nth-of-type(8) {
 	opacity: 1;
-	transition: 0.5s .60s;
+	transition: 0.5s .35s;
 	font-size: 18px;
 }
 
@@ -415,7 +429,7 @@ You probably want to change the styling.
 	/* cells tweede */
 	font-family: "brenner mono medium";
 	font-size: 14px;
-	animation: 0.2s flash 0.2s;
+	animation: 0.2s flash 0.1s;
 }
 
 .p16 span {
@@ -515,6 +529,7 @@ You probably want to change the styling.
 	/* cells tweede */
 	font-family: "brenner mono medium";
 	font-size: 14px;
+	animation: 0.2s flash 0.1s;
 }
 
 .p19.on {
@@ -630,7 +645,7 @@ You probably want to change the styling.
 	/* cells tweede */
 	font-family: "brenner mono medium";
 	font-size: 14px;
-	animation: 0.2s flash 0.2s;
+	animation: 0.2s flash 0.1s;
 }
 
 /* .p24.on {
@@ -715,13 +730,8 @@ You probably want to change the styling.
 	/* cells tweede */
 	font-family: "brenner mono medium";
 	font-size: 14px;
-	animation: 0.2s flash 0.2s;
+	animation: 0.2s flash 0.1s;
 }
-
-/* .p27.on {
-	font-family: "brenner mono";
-	font-size: 16px;
-} */
 
 .p27 span {
 	/* cells eerste */
@@ -797,14 +807,8 @@ You probably want to change the styling.
 	/* cells tweede */
 	font-family: "brenner mono medium";
 	font-size: 14px;
-	animation: 0.2s flash 0.2s;
+	animation: 0.2s flash 0.1s;
 }
-
-/* .p30.on {
-	font-family: "brenner mono";
-	font-size: 16px;
-} */
-
 
 .p30 span {
 	/* cells eerste */
@@ -947,10 +951,6 @@ You probably want to change the styling.
 	animation: 0.2s flash 0.2s;
 }
 
-/* .p35.on {
-	font-family: "brenner mono";
-	font-size: 16px;
-} */
 
 .p35 span {
 	/* cells eerste */
@@ -1187,10 +1187,9 @@ You probably want to change the styling.
 	font-size: 14px;
 }
 
-
 .p48.on {
 	font-family:"Brenner Sans Condensed Medium";
-	font-size: px;
+	font-size: 22px;
 }
 
 .p49.on {
@@ -1198,11 +1197,6 @@ You probably want to change the styling.
 	font-size: 18px;
 }
 
-/* .p50.on {
-	font-family:"Brenner Sans Condensed Medium";
-	font-style: italic;
-	font-size: 18px;
-} */
 
 .p50 span {
 	/* cells eerste */
@@ -1621,9 +1615,57 @@ You probably want to change the styling.
 	font-family:"Brenner mono medium";
 	font-size: 18px;
 }
-.p79.on {
+/* .p79.on {
 	font-family:"Brenner Sans Condensed Medium";
 	font-size: 22px;
+} */
+
+.p79 span {
+	font-family:"Brenner Sans Condensed Medium";
+	font-size: 22px;
+	opacity: 0;
+}
+
+.p79.on span:first-of-type {
+	opacity: 1;
+	transition: 0s;
+	font-size: 18px;
+}
+.p79.on span:nth-of-type(2) {
+	opacity: 1;
+	transition: 0.3s;
+	font-size: 22px;
+	font-style: normal;
+}
+.p79.on span:nth-of-type(3) {
+	opacity: 1;
+	transition: 0.6s;
+	font-size: 22px;
+	font-style: normal;
+}
+.p79.on span:nth-of-type(4) {
+	opacity: 1;
+	transition: 0.9s;
+	font-size: 22px;
+	font-style: normal;
+}
+.p79.on span:nth-of-type(5) {
+	opacity: 1;
+	transition: 1.2s;
+	font-size: 22px;
+	font-style: normal;
+}
+.p79.on span:nth-of-type(6) {
+	opacity: 1;
+	transition: 1.5s;
+	font-size: 22px;
+	font-style: normal;
+}
+.p79.on span:nth-of-type(7) {
+	opacity: 1;
+	transition: 1.6s;
+	font-size: 22px;
+	font-style: normal;
 }
 
 /* **********************************************
@@ -1684,7 +1726,10 @@ Sounds.
 	background-size: cover;
 	/* background: url('https://i.gifer.com/fetch/w300-preview/16/1634e9074b6ec09760fbef71bc54cd75.gif') */
 	/* background: url('https://media.giphy.com/media/tL5HmgfZi0Qow/giphy.gif') no-repeat ; */
-	background: #101010;
+	/* background: #101010;
+	background-size: cover;
+	background-position: center;  */
+	background: url('https://media.giphy.com/media/tL5HmgfZi0Qow/giphy.gif') no-repeat;
 	background-size: cover;
 	background-position: center; 
 }
@@ -1704,26 +1749,32 @@ Sounds.
 }
 
 .sound1 {
-	animation:  0.3s horizontal-shaking 0.3s;
-	animation-iteration-count: 2;
+	animation:  0.7s horizontal-shaking 0.3s;
+	animation-iteration-count: 5;
 	/* background: url('https://giphy.com/clips/3d-80s-derps-IUbIhbDiaWZsMhC4tC') no-repeat; */
-	background: url('https://media.giphy.com/media/7WgtYJAEnksobOm1is/giphy-downsized-large.gif') no-repeat;
+	/* background: url('https://media.giphy.com/media/7WgtYJAEnksobOm1is/giphy-downsized-large.gif') no-repeat; */
 	/* https://media.giphy.com/media/CJzxeevfkefecfVbU5/giphy.gif https://media.giphy.com/media/rnTrCog8df0CAUtMFz/giphy.gif https://media.giphy.com/media/rnTrCog8df0CAUtMFz/giphy.gifhttps://media.giphy.com/media/xTiTnqbp4wCeotMYSI/giphy.gif */
-	background-size: cover;
+	/* background-size: cover; */
 	/* background-position: center;  */
-	background-position-y: -5em;
+	/* background-position-y: -5em; */
 	/* animation: groter 2s ease-in; */
+	background: url('https://media.giphy.com/media/tL5HmgfZi0Qow/giphy.gif') no-repeat;
+	background-size: cover;
+	background-position: center; 
 }
 
 .sound2{
-	animation:  0.3s horizontal-shaking 0.3s;
-	animation-iteration-count: 2;
+	/* animation:  0.3s horizontal-shaking 0.3s;
+	animation-iteration-count: 2; */
+	/* animation:  0.7s horizontal-shaking3 0.3s;
+	animation-iteration-count: 5; */
 	/* background: url('https://giphy.com/clips/3d-80s-derps-IUbIhbDiaWZsMhC4tC') no-repeat; */
-	/* background: url('https://media.giphy.com/media/tL5HmgfZi0Qow/giphy.gif') no-repeat; */
+	background: url('https://media.giphy.com/media/tL5HmgfZi0Qow/giphy.gif') no-repeat;
 	/* https://media.giphy.com/media/CJzxeevfkefecfVbU5/giphy.gif https://media.giphy.com/media/rnTrCog8df0CAUtMFz/giphy.gif https://media.giphy.com/media/rnTrCog8df0CAUtMFz/giphy.gifhttps://media.giphy.com/media/xTiTnqbp4wCeotMYSI/giphy.gif */
-	background: url('https://media.giphy.com/media/7WgtYJAEnksobOm1is/giphy-downsized-large.gif') no-repeat;
+	/* background: url('https://media.giphy.com/media/7WgtYJAEnksobOm1is/giphy-downsized-large.gif') no-repeat; */
 	background-size: cover;
-	background-position-y: -5em;
+	background-position: center; 
+	/* background-position-y: -5em; */
 }
 
 .sound3{
@@ -1749,9 +1800,7 @@ Sounds.
 /* .sound3 , #closed-captions .p3.on{
 	opacity: 0;
 	transition: .05s;
-
 	position: absolute;
-
 	text-align: center;
 	background-color: rgb(182, 59, 153);
 	border: 25px solid white;
@@ -1763,9 +1812,12 @@ Sounds.
 
 .sound4{
 	/* background: #101010; */
-	background: url('https://media.giphy.com/media/7WgtYJAEnksobOm1is/giphy-downsized-large.gif') no-repeat;
+	/* background: url('https://media.giphy.com/media/7WgtYJAEnksobOm1is/giphy-downsized-large.gif') no-repeat;
 	background-size: cover;
-	background-position-y: -5em;
+	background-position-y: -5em; */
+	background: url('https://media.giphy.com/media/tL5HmgfZi0Qow/giphy.gif') no-repeat;
+	background-size: cover;
+	background-position: center; 
 }
 
 .sound5  {
@@ -2157,7 +2209,6 @@ Sounds.
 	animation: kleur 3.5s ease-in;
 }
 
-
 .sound14{
 	animation: verti-shaking 0.5s;
 	animation-iteration-count: 4;
@@ -2323,34 +2374,6 @@ Sounds.
 	height: 800px;
 }
 
-.sound21 {
-	/* background: #6da457; */
-	/* animation: groter5 1.7s ease-in-out; */
-}
-
-.sound22 {
-	/* background: #553393; */
-	/* animation: groter6 1.8s ease-in-out; */
-}
-
-/* .sound23 {
-	animation: groter7 1.5s ease-in-out;
-} */
-.sound23 {
-	/* background: #8b5978; */
-	/* background: transparent url('https://media.giphy.com/media/C4wlXJlgP2QhO/giphy.gif');
-	background-size: cover;
-	background-position: center; */
-	/* animation: groter4 1.8s; */
-	/* animation: groter7 1.5s ease-in-out; */
-	/* background: #980000; */
-	/* z-index:2;
-	transition: none;
-	background-image: url(../img/achter.png);
-	background-position: center;
-	background-repeat: no-repeat;
-	background-size: cover; */
-}
 
 .sound23 .doos {
 	opacity: 0.1;
@@ -2385,6 +2408,12 @@ Sounds.
 }
 .sound25 {
 	background: #ffffff;
+	/* transition: 3s;
+	background-image: url(../img/achter.png);
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover; */
+	
 	/* animation: 0.5s flash 0.3s; */
 	/* animation: groter8 2s; */
 }
@@ -2411,7 +2440,7 @@ Sounds.
 	background: transparent url('https://media.giphy.com/media/C4wlXJlgP2QhO/giphy.gif') no-repeat;
 	background-size: contain;
 	background-position: center;
-	opacity: 0.5;
+	opacity: 0.6;
 	position: absolute;
 	z-index: -1;
 }
@@ -2420,10 +2449,30 @@ Sounds.
 .sound30 {
 	animation: groter9 2s ease-in;
 }
-.sound32{
+
+.sound31 .doos {
+	width:3200px;
+	height: 1700px;
+	background: transparent url('https://media.giphy.com/media/C4wlXJlgP2QhO/giphy.gif') no-repeat;
+	background-size: contain;
+	background-position: center;
+	opacity: 0.2;
+	position: absolute;
+	z-index: -1;
+}
+
+.sound32 {
 	/* transition: .5s; */
+	transition: none;
+	background: url(../img/ring1.png)no-repeat;
+	background-position: center;
+	background-size: cover;
 	animation: horizontal-shaking1 0.3s;
 	animation-iteration-count: 2;
+}
+.sound32 .doos{
+	/* transition: none; */
+	opacity: 0;
 }
 
 .sound33{
@@ -2432,9 +2481,42 @@ Sounds.
 	background-size: cover;
 	background-position: center;
 }
+
+.sound33 .doos{
+	opacity: 1;
+	width:3200px;
+	height: 1700px;
+	background: transparent url('https://media.giphy.com/media/C4wlXJlgP2QhO/giphy.gif') no-repeat;
+	background-size: contain;
+	background-position: center;
+	opacity: 0.1;
+	position: absolute;
+	z-index: -1;
+}
+
+
 .sound34 {
 	animation: groter10 1.5s ease-in;
 }
+
+.sound36 {
+	background: #ffffff;
+	background-color: #ffffff;
+	animation:  1s verti-shaking2 0.3s;
+	animation-iteration-count:7;
+}
+
+
+
+.sound37 .doos{
+	transition: none;
+	opacity: 0;
+}
+.sound37 {
+	animation:  0.4s verti-shaking1 0.3s;
+	animation-iteration-count:7;
+}
+
 
 /* .sound10 #cirkel {
 	border-radius: 50%;
@@ -2492,14 +2574,11 @@ Sounds.
 
 @keyframes horizontal-shaking1 {
 	0% { transform: translate(0, 0) rotate(0deg); }
-    25% { transform: translate(-3px, 3px) rotate(2deg); }
-    50% { transform: translate(0, 0) rotate(0eg); }
-    75% { transform: translate(-3px, 3px) rotate(-2deg); }
+    25% { transform: translate(-2px, 2px) rotate(2deg); }
+    50% { transform: translate(0, 0) rotate(0deg); }
+    75% { transform: translate(-2px, 2px) rotate(-2deg); }
     100% { transform: translate(0, 0) rotate(0deg); }
 }
-
-
-
 
 
 @keyframes horizontal-shaking {
@@ -2510,6 +2589,13 @@ Sounds.
     100% { transform: translate(0, 0) rotate(0deg); }
 }
 
+@keyframes horizontal-shaking3 {
+	0% { transform: translate(0, 0) rotate(0deg); }
+    25% { transform: translate(4px, 4px) rotate(2deg); }
+    50% { transform: translate(0, 0) rotate(0eg); }
+    75% { transform: translate(-4px, 4px) rotate(-2deg); }
+    100% { transform: translate(0, 0) rotate(0deg); }
+}
 @keyframes verti-shaking {
 	0% { transform: translateY(0) }
 	25% { transform: translateY(5px) }
@@ -2520,6 +2606,22 @@ Sounds.
 }
 
 
+@keyframes verti-shaking1 {
+	0% { transform: translateX(0) }
+	25% { transform: translateX(1px) }
+	50% { transform: translateX(-1px) }
+	60% { transform: translateX(1px) }
+	80% { transform: translateX(-1px) }
+	100% { transform: translateX(0) }
+}
+@keyframes verti-shaking2 {
+	0% { transform: translateX(0) }
+	25% { transform: translateX(1px) }
+	50% { transform: translateX(-1px) }
+	60% { transform: translateX(1px) }
+	80% { transform: translateX(-1px) }
+	100% { transform: translateX(0) }
+}
 @keyframes gewoon {
 	0% {transform: scale(1,1)}
 	100% {transform: scale(1, 1)}
@@ -2540,10 +2642,6 @@ Sounds.
 	100% {transform: scale(1.55,1.55)}
 }
 
-/* @keyframes groter3{
-	0% {transform: scale(1.1,1.1)}
-	100% {transform: scale(1.3, 1.3)}
-} */
 
 @keyframes groter4{
 	0% {transform: scale(1.25,1.25)}
